@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import './nav-menu-item.css';
 
@@ -36,3 +37,9 @@ export default class NavMenuItem extends Component {
     );
   }
 }
+
+NavMenuItem.propTypes = {
+  name: PropTypes.string,
+  activeTab: PropTypes.string,
+  activeTabHandler: PropTypes.func.isRequired,
+};

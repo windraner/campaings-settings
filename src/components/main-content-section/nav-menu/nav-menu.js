@@ -1,37 +1,33 @@
-import React, { Component } from 'react';
+import React from 'react';
 import NavMenuItem from './nav-menu-item/nav-menu-item';
+import { MENU_LIST } from '../../../constans';
+import PropTypes from 'prop-types';
 
 import './nav-menu.css';
 
-export default class NavMenu extends Component {
+const NavMenu = (props) => {
+  const { activeTab, activeTabHandler } = props;
+  return (
+    <ul className="navmenu__list d-flex flex-column">
+      {
+        MENU_LIST.map((item) => {
+          return(
+            <NavMenuItem
+              key={item}
+              name={item}
+              activeTab={activeTab}
+              activeTabHandler={activeTabHandler}
+            />
+          );
+        })
+      }
+    </ul>
+  );
+};
 
-  renderItems = () => {
-    const { activeTab, activeTabHandler } = this.props;
+NavMenu.propTypes = {
+  activeTab: PropTypes.string.isRequired,
+  activeTabHandler: PropTypes.func.isRequired,
+};
 
-    const menuList = [
-      'Campaign details',
-      'Media Collections',
-      'Blacklists',
-      'Media rights'
-    ];
-
-    return menuList.map(item => {
-      return(
-        <NavMenuItem
-          key={item}
-          name={item}
-          activeTab={activeTab}
-          activeTabHandler={activeTabHandler}
-        />
-      );
-    });
-  }
-
-  render() {
-    return (
-      <ul className="navmenu__list d-flex flex-column">
-        {this.renderItems()}
-      </ul>
-    );
-  }
-}
+export default NavMenu;

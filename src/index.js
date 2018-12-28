@@ -8,8 +8,8 @@ const cancelCallback = () => {
   // console.log('cancelCallback');
 };
 
-const saveCallback = (newData) => {
-  console.log('saveCallback', newData);
+const saveCallback = (/*newData*/) => {
+  // console.log('saveCallback', newData);
 };
 
 ReactDOM.render(
