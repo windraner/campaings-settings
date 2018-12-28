@@ -1,0 +1,9 @@
+.navmenu__list {
+  background-color: #f8fafb;
+  box-shadow: 1px 0 0 0 #e2e7ee;
+  list-style: none;
+  height: 16rem;
+  width: 12rem;
+  margin: 0;
+  padding: 0;
+}

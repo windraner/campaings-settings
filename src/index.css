@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/ProximaNova-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IcoMoon';
+  src: url('./fonts/icomoon.eot?gk1htb');
+  src:
+    url('./fonts/icomoon.eot?gk1htb#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?gk1htb') format('truetype'),
+    url('./fonts/icomoon.woff?gk1htb') format('woff'),
+    url('./fonts/icomoon.svg?gk1htb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+  color: #354052;
+}

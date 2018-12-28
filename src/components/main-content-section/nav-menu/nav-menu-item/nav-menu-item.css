@@ -1,0 +1,24 @@
+.navmenu__item {
+  border-bottom: 1px solid #dfe3e9;
+  color: #354052;
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.navmenu__item_default {
+  cursor: pointer;
+}
+
+.navmenu__item_active {
+  background: #fff;
+  box-shadow: 1px 0 0 0 #fff;
+  border-left: 2px solid #95a3b2;
+  font-weight: 600;
+}
+
+.navmenu__item_hover {
+  background: #fff;
+  border-left: 2px solid #b7c0cd;
+  box-shadow: 1px 0 0 0 #fff;
+  cursor: pointer;
+}

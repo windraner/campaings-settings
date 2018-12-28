@@ -1,0 +1,19 @@
+.catalog-settings__cancel-button {
+  height: 2.875rem;
+  width: 9.375rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.catalog-settings__cancel-button:hover {
+  border-color: #a9b0b8;
+}
+
+.catalog-settings__cancel-button:active {
+  background: #ececec;
+}
