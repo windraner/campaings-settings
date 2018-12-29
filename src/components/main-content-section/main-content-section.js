@@ -4,16 +4,16 @@ import TabBlock from './tab-block/tab-block';
 import PropTypes from 'prop-types';
 
 const MainContentSection = (props) => {
-  const { activeTab, activeTabHandler } = props;
+  const { activeTab, stateHandler } = props;
   return (
     <div className="d-flex justify-content-between">
       <NavMenu
         activeTab={activeTab}
-        activeTabHandler={activeTabHandler}
+        stateHandler={stateHandler}
       />
 
       <TabBlock
-        activeTab={activeTab}
+        {...props}
       />
     </div>
   );
@@ -21,7 +21,7 @@ const MainContentSection = (props) => {
 
 MainContentSection.propTypes = {
   activeTab: PropTypes.string.isRequired,
-  activeTabHandler: PropTypes.func.isRequired,
+  stateHandler: PropTypes.func.isRequired,
 };
 
 export default MainContentSection;

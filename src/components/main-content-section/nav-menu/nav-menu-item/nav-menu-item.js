@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import { ACTIVE_TAB } from '../../../../constans';
+
 import './nav-menu-item.css';
 
 export default class NavMenuItem extends Component {
@@ -13,26 +15,27 @@ export default class NavMenuItem extends Component {
   }
 
   render() {
-    const { name, activeTab, activeTabHandler } = this.props;
+    const { name, activeTab, stateHandler } = this.props;
     const { isHovered } = this.state;
-    let status = 'navmenu__item_default';
+    let status = 'campaings-settings__nav-menu-item_default';
 
     if(isHovered) {
-      status = 'navmenu__item_hover';
+      status = 'campaings-settings__nav-menu-item_hover';
     }
 
     if(name === activeTab) {
-      status = 'navmenu__item_active';
+      status = 'campaings-settings__nav-menu-item_active';
     }
 
     return (
       <li
-        className={`navmenu__item ${status}`}
-        onClick={() => activeTabHandler(name)}
+        className={`campaings-settings__nav-menu-item position-relative ${status}`}
+        onClick={() => stateHandler(ACTIVE_TAB, name)}
         onMouseEnter={() => this.hoverHandler(true)}
         onMouseLeave={() => this.hoverHandler(false)}
       >
-        {name}
+        <span>{name}</span>
+        {/* <span className="campaings-settings__nav-menu-icon" /> */}
       </li>
     );
   }
@@ -41,5 +44,5 @@ export default class NavMenuItem extends Component {
 NavMenuItem.propTypes = {
   name: PropTypes.string,
   activeTab: PropTypes.string,
-  activeTabHandler: PropTypes.func.isRequired,
+  stateHandler: PropTypes.func.isRequired,
 };

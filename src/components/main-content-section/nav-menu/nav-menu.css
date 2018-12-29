@@ -1,8 +1,7 @@
-.navmenu__list {
+.campaings-settings__nav-menu-list {
   background-color: #f8fafb;
   box-shadow: 1px 0 0 0 #e2e7ee;
   list-style: none;
-  width: 12rem;
-  margin: 0;
+  width: 13%;
   padding: 1.875rem 0 0 0;
 }

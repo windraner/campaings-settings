@@ -1,0 +1,27 @@
+.campaings-settings__tab-block-container {
+  width: 87%;
+}
+
+.campaings-settings__tab-block-wrapper {
+  max-width: 53.75rem;
+  margin: 3.75rem auto;
+}
+
+.campaings-settings__input-title {
+  color: #7f8fa4;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.3125rem;
+}
+
+.campaings-settings__border-separator {
+  height: 1px;
+  background: #e2e7ee;
+  border: none;
+  margin: 1.875rem -2.875rem;
+  overflow: hidden;
+}
+
+.campaings-settings__divider-mt-32 {
+  margin-top: 2rem;
+}

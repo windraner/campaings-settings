@@ -6,9 +6,9 @@ import PropTypes from 'prop-types';
 import './nav-menu.css';
 
 const NavMenu = (props) => {
-  const { activeTab, activeTabHandler } = props;
+  const { activeTab, stateHandler } = props;
   return (
-    <ul className="navmenu__list d-flex flex-column">
+    <ul className="campaings-settings__nav-menu-list m-0 d-flex flex-column">
       {
         MENU_LIST.map((item) => {
           return(
@@ -16,7 +16,7 @@ const NavMenu = (props) => {
               key={item}
               name={item}
               activeTab={activeTab}
-              activeTabHandler={activeTabHandler}
+              stateHandler={stateHandler}
             />
           );
         })
@@ -27,7 +27,7 @@ const NavMenu = (props) => {
 
 NavMenu.propTypes = {
   activeTab: PropTypes.string.isRequired,
-  activeTabHandler: PropTypes.func.isRequired,
+  stateHandler: PropTypes.func.isRequired,
 };
 
 export default NavMenu;

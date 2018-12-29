@@ -1,0 +1,17 @@
+.campaings-settings__textarea-input {
+  border: 1px solid #d0d6de;
+  border-radius: 4px;
+  color: #354052;
+  font-size: 0.875rem;
+  outline: none;
+  min-height: 7.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.campaings-settings__textarea-input:hover {
+  border-color: #bfc4cb;
+}
+
+.campaings-settings__textarea-input:focus {
+  border-color: #a9b0b8;
+}

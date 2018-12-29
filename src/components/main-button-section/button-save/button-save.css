@@ -1,4 +1,4 @@
-.catalog-settings__save-button {
+.campaings-settings__save-button {
   height: 2.875rem;
   width: 9.375rem;
   background: #ea7835;
@@ -12,12 +12,12 @@
   cursor: pointer;
 }
 
-.catalog-settings__save-button:hover {
+.campaings-settings__save-button:hover {
   background: #eb7f40;
   border-color: #d37239;
 }
 
-.catalog-settings__save-button:active {
+.campaings-settings__save-button:active {
   background-color: #d86f31;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }

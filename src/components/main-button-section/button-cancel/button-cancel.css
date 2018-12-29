@@ -1,4 +1,4 @@
-.catalog-settings__cancel-button {
+.campaings-settings__cancel-button {
   height: 2.875rem;
   width: 9.375rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -10,10 +10,10 @@
   cursor: pointer;
 }
 
-.catalog-settings__cancel-button:hover {
+.campaings-settings__cancel-button:hover {
   border-color: #a9b0b8;
 }
 
-.catalog-settings__cancel-button:active {
+.campaings-settings__cancel-button:active {
   background: #ececec;
 }

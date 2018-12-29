@@ -1,0 +1,62 @@
+.campaings-settings__select-container {
+  width: 18.75rem;
+}
+
+.campaings-settings__select {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #354052;
+  outline: none;
+  appearance: none;
+  padding: 0.5rem 1rem;
+}
+
+.campaings-settings__select:hover {
+  border-color: #bfc4cb;
+}
+
+.campaings-settings__select:focus {
+  border-color: #a9b0b8;
+}
+
+.campaings-settings__select-option {
+  height: 40px;
+}
+
+.campaings-settings__dropdown-icon {
+  color: #b0b1bd;
+  font-size: 1rem;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  line-height: 1;
+}
+
+.campaings-settings__dropdown-icon::before {
+  content: '\e940';
+  font-family: 'IcoMoon', sans-serif;
+}
+
+.campaings-settings__dropdown-hint {
+  font-size: 0.75rem;
+  line-height: 1.3125rem;
+  color: #7f8fa4;
+  padding: 0 0 0 20px;
+}
+
+.campaings-settings__dropdown-hint-icon {
+  font-family: 'IcoMoon', sans-serif;
+  font-size: 1rem;
+  color: #c5d0de;
+}
+
+.campaings-settings__dropdown-hint-icon::before {
+  content: '\e927';
+  font-family: 'IcoMoon', sans-serif;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
