@@ -6,17 +6,6 @@
   line-height: 1.3125;
   width: 330px;
   padding: 0.625rem 1rem;
-  background-color: #f85359;
-}
-
-.campaings-settings__custom-alert-icon {
-  font-family: 'IcoMoon', sans-serif;
-  font-size: 1rem;
-  color: #fff;
-}
-
-.campaings-settings__custom-alert-icon::before {
-  content: '\e927';
 }
 
 .campaings-settings__custom-alert-close {

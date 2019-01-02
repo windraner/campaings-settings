@@ -1,0 +1,17 @@
+.campaings-settings__accounts-setting-table-container {
+  border: 1px solid #e2e7ee;
+  border-radius: 4px;
+  background: #f8fafb;
+  box-shadow: 0 1px 0 0 #b7c0cd;
+  padding: 0 0 2rem 0;
+}
+
+.campaings-settings__accounts-setting-table-header-container {
+  display: grid;
+  grid-template-columns: 30% 17% 17% 18% 18%;
+  padding: 1.25rem 2.875rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #7f8fa4;
+  border-bottom: solid 1px #e2e7ee;
+}

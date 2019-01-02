@@ -1,4 +1,4 @@
-.campaings-settings-content__switch-input {
+.campaings-settings__switch-input {
   appearance: none;
   background: #c5d0de;
   border-radius: 0.625rem;
@@ -8,16 +8,20 @@
   width: 2.25rem;
 }
 
-.campaings-settings-content__switch-input:not(:disabled):checked {
+.campaings-settings__switch-input:not(:disabled):checked {
   background-color: #ea7835;
 }
 
-.campaings-settings-content__switch-input:checked::before {
+.campaings-settings__switch-input:disabled {
+  background-color: #e9edf1;
+}
+
+.campaings-settings__switch-input:checked::before {
   left: 1.125rem;
   right: 0.125rem;
 }
 
-.campaings-settings-content__switch-input::before {
+.campaings-settings__switch-input::before {
   display: block;
   content: ' ';
   background-color: #fff;
@@ -31,7 +35,7 @@
   transition: 200ms all linear;
 }
 
-.campaings-settings-content__switch-text {
+.campaings-settings__switch-text {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.375rem;

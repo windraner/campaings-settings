@@ -12,12 +12,19 @@ export default class CampaingsSettings extends Component {
     super();
     const { data } = props;
     this.state = {
-      [CONSTANT.ACTIVE_TAB]: CONSTANT.MENU_LIST[0],
+      [CONSTANT.ACTIVE_TAB]: CONSTANT.MENU_LIST[1],
       [CONSTANT.NAME]: data.name,
       [CONSTANT.DESCRIPTION]: data.description,
       [CONSTANT.PRODUCT_CATALOGUE]: data.productCatalogue,
-      [CONSTANT.SHOPPABLE_LINK]: data.shoppableLink,
-      [CONSTANT.SHOW_ERROR_ALERT]: true,
+      [CONSTANT.IS_SHOPPABLE_LINK]: data.isShoppableLink,
+      [CONSTANT.IS_MEDIA_COLLECTION]: data.isMediaCollection,
+      [CONSTANT.MEDIA_COLLECTION_LIST]: data.mediaCollectionList,
+      [CONSTANT.IS_PHOTO_MODERATION_QUEUE]: data.isPhotosModerationQueue,
+      [CONSTANT.USER_BLACK_LIST]: data.userBlackList,
+      [CONSTANT.HASHTAG_BLACK_LIST]: data.hashtagBlackList,
+      [CONSTANT.ACCOUNTS_SETTINGS_ITEMS]: data.accountsSettingsItems,
+      [CONSTANT.SHOW_ERROR_ALERT]: false,
+      [CONSTANT.SHOW_SUCCESS_ALERT]: false,
     };
   }
 
@@ -35,8 +42,8 @@ export default class CampaingsSettings extends Component {
 
   render() {
     const { onCancel, onSave, productsCatalogueList } = this.props;
-    const { showErrorAlert } = this.state;
-    // console.log(CONSTANT.ACTIVE_TAB);
+    const { showErrorAlert, showSuccessAlert } = this.state;
+    // console.log(this.state);
     return (
       <div className="campaings-settings__container">
         <div className="campaings-settings__wrapper w-100 m-auto">
@@ -49,6 +56,7 @@ export default class CampaingsSettings extends Component {
 
           <MainButtonSection
             showErrorAlert={showErrorAlert}
+            showSuccessAlert={showSuccessAlert}
             stateHandler={this.stateHandler}
             onCancel={onCancel}
             onSave={onSave}

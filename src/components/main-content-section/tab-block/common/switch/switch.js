@@ -4,21 +4,21 @@ import PropTypes from 'prop-types';
 import './switch.css';
 
 const Switch = (props) => {
-  const { isChecked, field, switchHandler } = props;
+  const { text, isChecked, field, switchHandler, disabled } = props;
   return (
     <Fragment>
-      <hr className="campaings-settings__border-separator" />
-      <div className="d-flex justify-content-between margin-top-30">
-        <div className="campaings-settings__input-title">Enable shoppable link editing</div>
+      <div className="d-flex justify-content-between">
+        {text ? <div className="campaings-settings__input-title">{text}</div> : null}
 
         <label className="d-flex m-0">
           <input
+            disabled={disabled}
             checked={isChecked}
             type="checkbox"
-            className="campaings-settings-content__switch-input position-relative m-0"
+            className="campaings-settings__switch-input position-relative m-0"
             onChange={() => switchHandler(field)}
           />
-          <span className="campaings-settings-content__switch-text">{isChecked ? 'On' : 'Off'}</span>
+          <span className="campaings-settings__switch-text">{isChecked ? 'On' : 'Off'}</span>
         </label>
       </div>
     </Fragment>
@@ -26,7 +26,9 @@ const Switch = (props) => {
 };
 
 Switch.propTypes = {
-  field: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
+  text: PropTypes.string,
+  // field: PropTypes.string.isRequired,
   isChecked: PropTypes.bool.isRequired,
   switchHandler: PropTypes.func.isRequired
 };

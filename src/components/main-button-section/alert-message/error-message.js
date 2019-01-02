@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 
 import { SHOW_ERROR_ALERT } from '../../../constans';
 
-import './alert-message.css';
+import './error-message.css';
 
-const AlertMessage = (props) => {
+const ErrorMessage = (props) => {
   if(!props.showErrorAlert) {
     return null;
   }
 
   return (
-    <div className="campaings-settings__custom-alert d-flex align-items-center justify-content-between">
-      <span className="campaings-settings__custom-alert-icon"></span>
+    <div className="campaings-settings__custom-alert campaings-settings__custom-alert-error d-flex align-items-center justify-content-between">
+      <span className="campaings-settings__custom-alert-icon-error"></span>
       <span>Error. Please fill out all required fields!</span>
       <span
         onClick={() => props.stateHandler(SHOW_ERROR_ALERT, false)}
@@ -22,8 +22,9 @@ const AlertMessage = (props) => {
   );
 };
 
-AlertMessage.propTypes = {
+ErrorMessage.propTypes = {
   showErrorAlert: PropTypes.bool,
+  stateHandler: PropTypes.func.isRequired,
 };
 
-export default AlertMessage;
+export default ErrorMessage;

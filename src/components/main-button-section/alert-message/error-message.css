@@ -1,0 +1,13 @@
+.campaings-settings__custom-alert-error {
+  background-color: #f85359;
+}
+
+.campaings-settings__custom-alert-icon-error::before {
+  font-family: 'IcoMoon', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.campaings-settings__custom-alert-icon-error::before {
+  content: '\e927';
+}

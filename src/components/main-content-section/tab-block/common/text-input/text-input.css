@@ -9,6 +9,10 @@
   padding: 0.5rem 0.75rem;
 }
 
+.campaings-settings__text-input-error {
+  border-color: #ed1c24 !important;
+}
+
 .campaings-settings__text-input:hover {
   border-color: #bfc4cb;
 }
@@ -17,13 +21,13 @@
   border-color: #a9b0b8;
 }
 
-.campaings-settings__text-input-error {
+.campaings-settings__hint-input-error {
   color: #ed1c24;
   font-size: 0.75rem;
   line-height: 1.3125rem;
 }
 
-.campaings-settings__text-input-error-icon {
+.campaings-settings__hint-input-error-icon {
   font-family: 'IcoMoon', sans-serif;
   font-size: 1rem;
   height: 1rem;
@@ -31,12 +35,12 @@
   background: #ed1c24;
 }
 
-.campaings-settings__text-input-error-icon::before {
+.campaings-settings__hint-input-error-icon::before {
   content: '\e92d';
   position: absolute;
   font-size: 0.65rem;
   font-weight: 600;
-  left: 2px;
+  left: 3px;
   top: 4px;
   line-height: 1;
   color: #fff;

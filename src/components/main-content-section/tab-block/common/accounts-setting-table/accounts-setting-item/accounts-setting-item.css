@@ -1,0 +1,69 @@
+.campaings-settings__accounts-setting-table-item-container {
+  display: grid;
+  grid-template-columns: 30% 17% 17% 18% 18%;
+  padding: 1.25rem 2.875rem;
+  background: #fff;
+  border-bottom: solid 1px #e2e7ee;
+}
+
+.campaings-settings__accounts-setting-table-item-container:last-child {
+  border: none;
+}
+
+.campaings-settings__accounts-setting-table-item-container-disabled {
+  background: #f8fafb;
+}
+
+.campaings-settings__accounts-setting-table-item-image {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 4px;
+}
+
+.campaings-settings__accounts-setting-table-item-name {
+  color: #354052;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3125rem;
+}
+
+.campaings-settings__accounts-setting-table-item-soc-name {
+  color: #354052;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.campaings-settings__accounts-setting-table-item-soc-icon {
+  font-family: 'IcoMoon', sans-serif;
+  font-size: 1rem;
+}
+
+.campaings-settings__accounts-setting-table-item-inst::before {
+  content: '\e919';
+  color: #dc2875;
+}
+
+.campaings-settings__accounts-setting-table-item-tw::before {
+  content: '\e916';
+  color: #1da1f2;
+}
+
+.campaings-settings__accounts-setting-table-item-status {
+  color: #fff;
+  width: 5rem;
+  line-height: 1.125rem;
+  border-radius: 4px;
+  font-size: 0.625rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.campaings-settings__accounts-setting-table-item-status-verified {
+  background: #39b54a;
+}
+
+.campaings-settings__accounts-setting-table-item-status-rejected {
+  background: #f85359;
+}

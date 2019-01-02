@@ -1,0 +1,35 @@
+.catalog-settings-content__select-control {
+  height: 2.25rem;
+  background: #fff;
+  border: 1px solid #d0d6de;
+  border-radius: 4px;
+}
+
+.catalog-settings-content__select-value-container {
+  background: #f1f4f8;
+  border: 1px solid #d0d6de;
+  border-radius: 4px;
+}
+
+.catalog-settings-content__select-value-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #354052;
+  background: #f1f4f8;
+  padding: 0 1.25rem 0 0;
+  line-height: 1.6rem;
+}
+
+.catalog-settings-content__select-value-remove {
+  width: 1rem;
+  color: #c5d0de;
+  font-size: 1.16rem;
+  font-weight: 600;
+  align-items: center;
+  background: #f1f4f8;
+  cursor: pointer;
+}
+
+.catalog-settings-content__select-value-remove:hover {
+  color: #333;
+}
