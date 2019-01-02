@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TooltipIcon from '../tooltip-icon/tooltip-icon';
 import AccountsSettingItem from './accounts-setting-item/accounts-setting-item';
+import PropTypes from 'prop-types';
 
 import { ACCOUNTS_SETTINGS_ITEMS } from '../../../../../constans';
 
@@ -68,3 +69,8 @@ export default class AccountsSettingTable extends Component {
     );
   }
 }
+
+AccountsSettingTable.propTypes = {
+  accountsSettingsItems: PropTypes.array.isRequired,
+  stateHandler: PropTypes.func.isRequired,
+};

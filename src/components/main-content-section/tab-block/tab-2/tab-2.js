@@ -6,6 +6,7 @@ import Switch from '../common/switch/switch';
 import CreatableSelectInput from '../common/creatable-select/creatable-select';
 import AccountEditButton from '../common/account-edit-button/account-edit-button';
 import AccountsSettingTable from '../common/accounts-setting-table/accounts-setting-table';
+import PropTypes from 'prop-types';
 
 import { IS_MEDIA_COLLECTION, MEDIA_COLLECTION_LIST, IS_PHOTO_MODERATION_QUEUE } from '../../../../constans';
 
@@ -21,7 +22,7 @@ export default class Tab2 extends Component {
           text={'Collect media with hashtags (max. 3, comma-separated)'}
           tooltipText={'test message'}
           field={MEDIA_COLLECTION_LIST}
-          mediaCollectionList={mediaCollectionList}
+          itemsList={mediaCollectionList}
           stateHandler={stateHandler}
         />
         <div className="campaings-settings__divider-mt-32" />
@@ -72,3 +73,12 @@ export default class Tab2 extends Component {
     );
   }
 }
+
+Tab2.propTypes = {
+  accountsSettingsItems: PropTypes.array.isRequired,
+  isMediaCollection: PropTypes.bool.isRequired,
+  isPhotosModerationQueue: PropTypes.bool.isRequired,
+  mediaCollectionList: PropTypes.array.isRequired,
+  stateHandler: PropTypes.func.isRequired,
+  switchHandler: PropTypes.func.isRequired,
+};

@@ -28,9 +28,12 @@ const Switch = (props) => {
 Switch.propTypes = {
   disabled: PropTypes.bool,
   text: PropTypes.string,
-  // field: PropTypes.string.isRequired,
+  field: PropTypes.oneOfType([
+    PropTypes.string.isRequired,
+    PropTypes.object.isRequired
+  ]),
   isChecked: PropTypes.bool.isRequired,
-  switchHandler: PropTypes.func.isRequired
+  switchHandler: PropTypes.func.isRequired,
 };
 
 export default Switch;

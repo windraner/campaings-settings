@@ -32,10 +32,15 @@
   font-size: 1rem;
   font-weight: 400;
   color: #f85359;
+  line-height: 1;
 }
 
 .campaings-settings__nav-menu-icon::before {
   content: '\e927';
   position: absolute;
   right: 0.5rem;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
 }

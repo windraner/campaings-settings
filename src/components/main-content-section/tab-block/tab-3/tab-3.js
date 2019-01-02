@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import TabTitle from '../common/tab-title/tab-title';
 import TabContainer from '../common/tab-container/tab-container';
 import CreatableSelectInput from '../common/creatable-select/creatable-select';
+import PropTypes from 'prop-types';
 
 import { USER_BLACK_LIST, HASHTAG_BLACK_LIST } from '../../../../constans';
 
@@ -29,6 +30,12 @@ const Tab3 = (props) => {
       </TabContainer>
     </Fragment>
   );
+};
+
+Tab3.propTypes = {
+  userBlackList: PropTypes.array.isRequired,
+  hashtagBlackList: PropTypes.array.isRequired,
+  stateHandler: PropTypes.func.isRequired,
 };
 
 export default Tab3;

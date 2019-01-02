@@ -15,8 +15,16 @@ export default class NavMenuItem extends Component {
   }
 
   render() {
-    const { name, activeTab, stateHandler } = this.props;
+    const { name, menuAlerts, activeTab, stateHandler } = this.props;
     const { isHovered } = this.state;
+
+    let allert = false;
+    if(menuAlerts) {
+
+      menuAlerts.find((item) => {
+        if(!item) {allert = true;}
+      });
+    }
     let status = 'campaings-settings__nav-menu-item_default';
 
     if(isHovered) {
@@ -35,7 +43,7 @@ export default class NavMenuItem extends Component {
         onMouseLeave={() => this.hoverHandler(false)}
       >
         <span>{name}</span>
-        {/* <span className="campaings-settings__nav-menu-icon" /> */}
+        {allert ? <span className="campaings-settings__nav-menu-icon" /> : null}
       </li>
     );
   }
@@ -43,6 +51,7 @@ export default class NavMenuItem extends Component {
 
 NavMenuItem.propTypes = {
   name: PropTypes.string,
+  menuAlerts: PropTypes.array,
   activeTab: PropTypes.string,
   stateHandler: PropTypes.func.isRequired,
 };

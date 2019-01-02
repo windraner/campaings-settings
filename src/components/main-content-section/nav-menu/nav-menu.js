@@ -6,15 +6,16 @@ import PropTypes from 'prop-types';
 import './nav-menu.css';
 
 const NavMenu = (props) => {
-  const { activeTab, stateHandler } = props;
+  const { menuAlerts, activeTab, stateHandler } = props;
   return (
     <ul className="campaings-settings__nav-menu-list m-0 d-flex flex-column">
       {
-        MENU_LIST.map((item) => {
+        MENU_LIST.map((item, i) => {
           return(
             <NavMenuItem
               key={item}
               name={item}
+              menuAlerts={menuAlerts[i]}
               activeTab={activeTab}
               stateHandler={stateHandler}
             />
@@ -26,6 +27,7 @@ const NavMenu = (props) => {
 };
 
 NavMenu.propTypes = {
+  menuAlerts: PropTypes.array,
   activeTab: PropTypes.string.isRequired,
   stateHandler: PropTypes.func.isRequired,
 };

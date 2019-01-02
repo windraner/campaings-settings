@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import PropTypes from 'prop-types';
 
 import './dropdown.css';
 
@@ -40,3 +41,13 @@ export default class Dropdown extends Component {
     );
   }
 }
+
+Dropdown.propTypes = {
+  title: PropTypes.string,
+  value: PropTypes.string,
+  field: PropTypes.oneOfType([
+    PropTypes.string.isRequired,
+    PropTypes.object.isRequired
+  ]),
+  stateHandler: PropTypes.func.isRequired,
+};

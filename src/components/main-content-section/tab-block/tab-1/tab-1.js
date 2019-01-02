@@ -5,6 +5,7 @@ import TextInput from '../common/text-input/text-input';
 import TextareaInput from '../common/textarea-input/textarea-input';
 import Dropdown from '../common/dropdown/dropdown';
 import Switch from '../common/switch/switch';
+import PropTypes from 'prop-types';
 
 import { NAME, DESCRIPTION, PRODUCT_CATALOGUE, IS_SHOPPABLE_LINK } from '../../../../constans';
 
@@ -56,6 +57,16 @@ const Tab1 = (props) => {
       </TabContainer>
     </Fragment>
   );
+};
+
+Tab1.propTypes = {
+  description: PropTypes.string.isRequired,
+  isShoppableLink: PropTypes.bool.isRequired,
+  name: PropTypes.string.isRequired,
+  productCatalogue: PropTypes.string.isRequired,
+  productsCatalogueList: PropTypes.array.isRequired,
+  stateHandler: PropTypes.func.isRequired,
+  switchHandler: PropTypes.func.isRequired,
 };
 
 export default Tab1;

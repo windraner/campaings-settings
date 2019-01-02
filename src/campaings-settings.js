@@ -29,9 +29,11 @@ export default class CampaingsSettings extends Component {
   }
 
   stateHandler = (field, value) => {
+    // alert message handler block start
     if(field === CONSTANT.NAME && !value) {
       return this.setState({[field]: value, [CONSTANT.SHOW_ERROR_ALERT]: true});
     }
+    // alert message handler block end
 
     this.setState({[field]: value});
   }
@@ -40,8 +42,14 @@ export default class CampaingsSettings extends Component {
     this.setState({[field]: !this.state[field]});
   }
 
+  saveHandler = () => {
+    const { onSave } = this.props;
+    this.setState({[CONSTANT.SHOW_SUCCESS_ALERT]: true});
+    onSave();
+  }
+
   render() {
-    const { onCancel, onSave, productsCatalogueList } = this.props;
+    const { onCancel, productsCatalogueList } = this.props;
     const { showErrorAlert, showSuccessAlert } = this.state;
     // console.log(this.state);
     return (
@@ -59,7 +67,7 @@ export default class CampaingsSettings extends Component {
             showSuccessAlert={showSuccessAlert}
             stateHandler={this.stateHandler}
             onCancel={onCancel}
-            onSave={onSave}
+            onSave={this.saveHandler}
           />
         </div>
       </div>
@@ -68,6 +76,28 @@ export default class CampaingsSettings extends Component {
 }
 
 CampaingsSettings.propTypes = {
+  data: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    productCatalogue: PropTypes.string.isRequired,
+    isShoppableLink: PropTypes.bool.isRequired,
+    isMediaCollection: PropTypes.bool.isRequired,
+    mediaCollectionList: PropTypes.array.isRequired,
+    isPhotosModerationQueue: PropTypes.bool.isRequired,
+    userBlackList: PropTypes.array.isRequired,
+    hashtagBlackList: PropTypes.array.isRequired,
+    accountsSettingsItems: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+      userName : PropTypes.string.isRequired,
+      platform: PropTypes.string.isRequired,
+      status: PropTypes.string.isRequired,
+      userFeed: PropTypes.bool.isRequired,
+      taggedFeed: PropTypes.bool.isRequired,
+      mentionedFeed: PropTypes.bool.isRequired,
+    })).isRequired,
+  }),
+  productsCatalogueList: PropTypes.array.isRequired,
   onSave: PropTypes.func.isRequired,
   onCancel: PropTypes.func.isRequired,
 };

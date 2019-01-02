@@ -8,6 +8,7 @@ import {
   MultiValueLabel,
   MultiValueRemove
 } from './common-components/common-components';
+import PropTypes from 'prop-types';
 
 import { createSelectOptions, splitMultiOptionLimit, optionLimit } from '../../../../../utils';
 
@@ -90,3 +91,13 @@ export default class CreatableSelectInput extends Component {
     );
   }
 }
+
+CreatableSelectInput.propTypes = {
+  itemsList: PropTypes.array.isRequired,
+  tooltipText: PropTypes.string,
+  field: PropTypes.oneOfType([
+    PropTypes.string.isRequired,
+    PropTypes.object.isRequired
+  ]),
+  stateHandler: PropTypes.func.isRequired,
+};

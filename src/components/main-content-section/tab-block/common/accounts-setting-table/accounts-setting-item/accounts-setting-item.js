@@ -1,5 +1,6 @@
 import React from 'react';
 import Switch from '../../switch/switch';
+import PropTypes from 'prop-types';
 
 import './accounts-setting-item.css';
 
@@ -71,6 +72,11 @@ const AccountsSettingItem = (props) => {
       </div>
     </div>
   );
+};
+
+AccountsSettingItem.propTypes = {
+  item: PropTypes.object.isRequired,
+  currentSwitchHandler: PropTypes.func.isRequired,
 };
 
 export default AccountsSettingItem;

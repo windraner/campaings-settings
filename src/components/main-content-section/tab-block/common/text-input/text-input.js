@@ -33,6 +33,7 @@ TextInput.propTypes = {
   value: PropTypes.string.isRequired,
   field: PropTypes.string.isRequired,
   stateHandler: PropTypes.func.isRequired,
+  required: PropTypes.bool,
 };
 
 export default TextInput;

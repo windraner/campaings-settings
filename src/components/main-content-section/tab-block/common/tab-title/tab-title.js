@@ -12,7 +12,7 @@ const TabTitle = (props) => {
 };
 
 TabTitle.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
 };
 
 export default TabTitle;
