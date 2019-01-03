@@ -10,10 +10,10 @@ const AccountsSettingItem = (props) => {
   let socIcon;
   switch(item.platform) {
     case 'Instagram':
-      socIcon = 'campaings-settings__accounts-setting-table-item-inst';
+      socIcon = 'campaigns-settings__accounts-setting-table-item-inst';
       break;
     case 'Twitter':
-      socIcon = 'campaings-settings__accounts-setting-table-item-tw';
+      socIcon = 'campaigns-settings__accounts-setting-table-item-tw';
       break;
   }
 
@@ -21,30 +21,30 @@ const AccountsSettingItem = (props) => {
   let rejected = false;
   switch(item.status) {
     case 'Verified':
-      status = 'campaings-settings__accounts-setting-table-item-status-verified';
+      status = 'campaigns-settings__accounts-setting-table-item-status-verified';
       break;
     case 'Rejected':
-      status = 'campaings-settings__accounts-setting-table-item-status-rejected';
+      status = 'campaigns-settings__accounts-setting-table-item-status-rejected';
       rejected = true;
       break;
   }
 
   return (
     <div
-      className={`campaings-settings__accounts-setting-table-item-container ${rejected ? 'campaings-settings__accounts-setting-table-item-container-disabled' : ''}`}
+      className={`campaigns-settings__accounts-setting-table-item-container ${rejected ? 'campaigns-settings__accounts-setting-table-item-container-disabled' : ''}`}
     >
       <div className="d-flex">
-        <img className="campaings-settings__accounts-setting-table-item-image d-block" src={item.url} alt=""/>
+        <img className="campaigns-settings__accounts-setting-table-item-image d-block" src={item.url} alt=""/>
         <div className="ml-3">
-          <div className="campaings-settings__accounts-setting-table-item-name">{item.userName}</div>
-          <div className="campaings-settings__accounts-setting-table-item-soc-name">
-            <span className={`campaings-settings__accounts-setting-table-item-soc-icon ${socIcon} mr-1`} />
+          <div className="campaigns-settings__accounts-setting-table-item-name">{item.userName}</div>
+          <div className="campaigns-settings__accounts-setting-table-item-soc-name">
+            <span className={`campaigns-settings__accounts-setting-table-item-soc-icon ${socIcon} mr-1`} />
             {item.platform}
           </div>
         </div>
       </div>
       <div className="d-flex align-items-end">
-        <div className={`campaings-settings__accounts-setting-table-item-status ${status}`}>{item.status}</div>
+        <div className={`campaigns-settings__accounts-setting-table-item-status ${status}`}>{item.status}</div>
       </div>
       <div className="d-flex align-items-end">
         <Switch

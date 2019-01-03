@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Switch /> matches the snapshot hide 1`] = `
+<Fragment>
+  <div
+    className="d-flex justify-content-between"
+  >
+    <div
+      className="campaigns-settings__input-title"
+    >
+      test1
+    </div>
+    <label
+      className="d-flex m-0"
+    >
+      <input
+        checked={true}
+        className="campaigns-settings__switch-input position-relative m-0"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <span
+        className="campaigns-settings__switch-text"
+      >
+        On
+      </span>
+    </label>
+  </div>
+</Fragment>
+`;
+
+exports[`<Switch /> matches the snapshot hide 2`] = `
+<Fragment>
+  <div
+    className="d-flex justify-content-between"
+  >
+    <div
+      className="campaigns-settings__input-title"
+    >
+      test1
+    </div>
+    <label
+      className="d-flex m-0"
+    >
+      <input
+        checked={false}
+        className="campaigns-settings__switch-input position-relative m-0"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <span
+        className="campaigns-settings__switch-text"
+      >
+        Off
+      </span>
+    </label>
+  </div>
+</Fragment>
+`;

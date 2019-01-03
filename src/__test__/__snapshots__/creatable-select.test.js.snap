@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreatableSelectInput /> matches the snapshot hide 1`] = `
+<Fragment>
+  <div
+    className="campaigns-settings__input-title mb-1"
+  >
+    test1
+  </div>
+  <div
+    className="position-relative"
+  >
+    <StateManager
+      components={
+        Object {
+          "Control": [Function],
+          "IndicatorsContainer": [Function],
+          "MultiValueContainer": [Function],
+          "MultiValueLabel": [Function],
+          "MultiValueRemove": [Function],
+        }
+      }
+      defaultInputValue=""
+      defaultMenuIsOpen={false}
+      defaultValue={null}
+      inputValue=""
+      isClearable={true}
+      isMulti={true}
+      menuIsOpen={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onInputChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder=""
+      styles={
+        Object {
+          "input": [Function],
+          "menu": [Function],
+          "menuList": [Function],
+          "valueContainer": [Function],
+        }
+      }
+      value={
+        Array [
+          Object {
+            "label": "qwe",
+            "value": "qwe",
+          },
+          Object {
+            "label": "rty",
+            "value": "rty",
+          },
+        ]
+      }
+    />
+    <TooltipIcon
+      text="test2"
+    />
+  </div>
+</Fragment>
+`;

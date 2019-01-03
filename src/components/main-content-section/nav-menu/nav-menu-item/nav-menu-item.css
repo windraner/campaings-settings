@@ -1,33 +1,33 @@
-.campaings-settings__nav-menu-item {
+.campaigns-settings__nav-menu-item {
   border-bottom: 1px solid #dfe3e9;
   color: #354052;
   font-size: 0.875rem;
   padding: 0.5rem 0.75rem;
 }
 
-.campaings-settings__nav-menu-item:first-child {
+.campaigns-settings__nav-menu-item:first-child {
   border-top: 1px solid #dfe3e9;
 }
 
-.campaings-settings__nav-menu-item_default {
+.campaigns-settings__nav-menu-item_default {
   cursor: pointer;
 }
 
-.campaings-settings__nav-menu-item_active {
+.campaigns-settings__nav-menu-item_active {
   background: #fff;
   box-shadow: 1px 0 0 0 #fff;
   border-left: 2px solid #95a3b2;
   font-weight: 600;
 }
 
-.campaings-settings__nav-menu-item_hover {
+.campaigns-settings__nav-menu-item_hover {
   background: #fff;
   border-left: 2px solid #b7c0cd;
   box-shadow: 1px 0 0 0 #fff;
   cursor: pointer;
 }
 
-.campaings-settings__nav-menu-icon {
+.campaigns-settings__nav-menu-icon {
   font-family: 'IcoMoon', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -35,7 +35,7 @@
   line-height: 1;
 }
 
-.campaings-settings__nav-menu-icon::before {
+.campaigns-settings__nav-menu-icon::before {
   content: '\e927';
   position: absolute;
   right: 0.5rem;

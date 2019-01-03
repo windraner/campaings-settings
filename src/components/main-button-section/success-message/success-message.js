@@ -11,12 +11,12 @@ const SuccessMessage = (props) => {
   }
 
   return (
-    <div className="campaings-settings__custom-alert campaings-settings__custom-alert-success d-flex align-items-center justify-content-between">
-      <span className="campaings-settings__custom-alert-icon-success position-relative rounded-circle"></span>
+    <div className="campaigns-settings__custom-alert campaigns-settings__custom-alert-success d-flex align-items-center justify-content-between">
+      <span className="campaigns-settings__custom-alert-icon-success position-relative rounded-circle"></span>
       <span>Success! All changes have been saved.</span>
       <span
         onClick={() => props.stateHandler(SHOW_SUCCESS_ALERT, false)}
-        className="campaings-settings__custom-alert-close"
+        className="campaigns-settings__custom-alert-close"
       />
     </div>
   );

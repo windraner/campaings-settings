@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccountsSettingTable /> matches the snapshot hide 1`] = `
+<div
+  className="campaigns-settings__accounts-setting-table-container"
+>
+  <div
+    className="campaigns-settings__accounts-setting-table-header-container d-grid"
+  >
+    <div>
+      Username / Platform
+    </div>
+    <div>
+      Status
+    </div>
+    <div>
+      <span
+        className="position-relative"
+      >
+        User feed
+        <TooltipIcon
+          text="1111"
+        />
+      </span>
+    </div>
+    <div>
+      <span
+        className="position-relative"
+      >
+        Tagged feed
+        <TooltipIcon
+          text="2222"
+        />
+      </span>
+    </div>
+    <div>
+      <span
+        className="position-relative"
+      >
+        Mentioned feed
+        <TooltipIcon
+          text="3333"
+        />
+      </span>
+    </div>
+  </div>
+  <AccountsSettingItem
+    currentSwitchHandler={[Function]}
+    item={
+      Object {
+        "id": "1",
+        "mentionedFeed": false,
+        "platform": "Instagram",
+        "status": "Verified",
+        "taggedFeed": true,
+        "url": "test.png",
+        "userFeed": true,
+        "userName": "Instagram",
+      }
+    }
+    key="1"
+  />
+  <AccountsSettingItem
+    currentSwitchHandler={[Function]}
+    item={
+      Object {
+        "id": "2",
+        "mentionedFeed": false,
+        "platform": "Twitter",
+        "status": "Rejected",
+        "taggedFeed": false,
+        "url": "test.png",
+        "userFeed": false,
+        "userName": "Blackmirror",
+      }
+    }
+    key="2"
+  />
+</div>
+`;

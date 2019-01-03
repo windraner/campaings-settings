@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavMenu /> matches the snapshot 1`] = `
+<ul
+  className="campaigns-settings__nav-menu-list m-0 d-flex flex-column"
+>
+  <NavMenuItem
+    activeTab="Campaign details"
+    key="Campaign details"
+    name="Campaign details"
+    stateHandler={[Function]}
+  />
+  <NavMenuItem
+    activeTab="Campaign details"
+    key="Media Collections"
+    name="Media Collections"
+    stateHandler={[Function]}
+  />
+  <NavMenuItem
+    activeTab="Campaign details"
+    key="Blacklists"
+    name="Blacklists"
+    stateHandler={[Function]}
+  />
+  <NavMenuItem
+    activeTab="Campaign details"
+    key="Media rights"
+    name="Media rights"
+    stateHandler={[Function]}
+  />
+</ul>
+`;

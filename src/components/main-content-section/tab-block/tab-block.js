@@ -5,19 +5,19 @@ import PropTypes from 'prop-types';
 import './tab-block.css';
 
 const TabBlock = (props) => {
-  let currnetTabIndex = 1;
+  let currentTabIndex = 1;
 
   MENU_LIST.forEach((item, i) => {
     if(item === props.activeTab) {
-      currnetTabIndex = ++i;
+      currentTabIndex = ++i;
     }
   });
 
-  const Component = require(`./tab-${currnetTabIndex}/tab-${currnetTabIndex}`).default;
+  const Component = require(`./tab-${currentTabIndex}/tab-${currentTabIndex}`).default;
 
   return (
-    <div className="campaings-settings__tab-block-container">
-      <div className="campaings-settings__tab-block-wrapper">
+    <div className="campaigns-settings__tab-block-container">
+      <div className="campaigns-settings__tab-block-wrapper">
         <Component {...props} />
       </div>
     </div>

@@ -25,25 +25,25 @@ export default class NavMenuItem extends Component {
         if(!item) {allert = true;}
       });
     }
-    let status = 'campaings-settings__nav-menu-item_default';
+    let status = 'campaigns-settings__nav-menu-item_default';
 
     if(isHovered) {
-      status = 'campaings-settings__nav-menu-item_hover';
+      status = 'campaigns-settings__nav-menu-item_hover';
     }
 
     if(name === activeTab) {
-      status = 'campaings-settings__nav-menu-item_active';
+      status = 'campaigns-settings__nav-menu-item_active';
     }
 
     return (
       <li
-        className={`campaings-settings__nav-menu-item position-relative ${status}`}
+        className={`campaigns-settings__nav-menu-item position-relative ${status}`}
         onClick={() => stateHandler(ACTIVE_TAB, name)}
         onMouseEnter={() => this.hoverHandler(true)}
         onMouseLeave={() => this.hoverHandler(false)}
       >
         <span>{name}</span>
-        {allert ? <span className="campaings-settings__nav-menu-icon" /> : null}
+        {allert ? <span className="campaigns-settings__nav-menu-icon" /> : null}
       </li>
     );
   }

@@ -5,14 +5,14 @@ import PropTypes from 'prop-types';
 
 import * as CONSTANT from './constans';
 
-import './campaings-settings.css';
+import './campaigns-settings.css';
 
-export default class CampaingsSettings extends Component {
+export default class CampaignsSettings extends Component {
   constructor(props) {
     super();
     const { data } = props;
     this.state = {
-      [CONSTANT.ACTIVE_TAB]: CONSTANT.MENU_LIST[1],
+      [CONSTANT.ACTIVE_TAB]: CONSTANT.MENU_LIST[3],
       [CONSTANT.NAME]: data.name,
       [CONSTANT.DESCRIPTION]: data.description,
       [CONSTANT.PRODUCT_CATALOGUE]: data.productCatalogue,
@@ -23,6 +23,9 @@ export default class CampaingsSettings extends Component {
       [CONSTANT.USER_BLACK_LIST]: data.userBlackList,
       [CONSTANT.HASHTAG_BLACK_LIST]: data.hashtagBlackList,
       [CONSTANT.ACCOUNTS_SETTINGS_ITEMS]: data.accountsSettingsItems,
+      [CONSTANT.IS_MEDIA_RIGHTS]: data.isMediaRights,
+      [CONSTANT.HASHTAG_RIGHTS_LIST]: data.hashtagRightsList,
+      [CONSTANT.TERMS_AND_CONDITIONS]: data.termsAndConditions,
       [CONSTANT.SHOW_ERROR_ALERT]: false,
       [CONSTANT.SHOW_SUCCESS_ALERT]: false,
     };
@@ -44,6 +47,7 @@ export default class CampaingsSettings extends Component {
 
   saveHandler = () => {
     const { onSave } = this.props;
+    if(!this.state[CONSTANT.NAME]) {return this.setState({[CONSTANT.SHOW_ERROR_ALERT]: true});}
     this.setState({[CONSTANT.SHOW_SUCCESS_ALERT]: true});
     onSave();
   }
@@ -51,10 +55,10 @@ export default class CampaingsSettings extends Component {
   render() {
     const { onCancel, productsCatalogueList } = this.props;
     const { showErrorAlert, showSuccessAlert } = this.state;
-    // console.log(this.state);
+
     return (
-      <div className="campaings-settings__container">
-        <div className="campaings-settings__wrapper w-100 m-auto">
+      <div className="campaigns-settings__container">
+        <div className="campaigns-settings__wrapper w-100 m-auto">
           <MainContentSection
             {...this.state}
             productsCatalogueList={productsCatalogueList}
@@ -75,7 +79,7 @@ export default class CampaingsSettings extends Component {
   }
 }
 
-CampaingsSettings.propTypes = {
+CampaignsSettings.propTypes = {
   data: PropTypes.shape({
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
@@ -98,6 +102,9 @@ CampaingsSettings.propTypes = {
     })).isRequired,
   }),
   productsCatalogueList: PropTypes.array.isRequired,
+  isMediaRights: PropTypes.bool.isRequired,
+  hashtagRightsList: PropTypes.array.isRequired,
+  termsAndConditions: PropTypes.string.isRequired,
   onSave: PropTypes.func.isRequired,
   onCancel: PropTypes.func.isRequired,
 };

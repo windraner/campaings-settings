@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccountEditButton /> matches the snapshot hide 1`] = `
+<a
+  className="campaigns-settings__account-edit-button d-flex align-items-end text-center"
+  href="#"
+>
+  <span
+    className="campaigns-settings__account-edit-button-icon mr-2"
+  />
+  Edit accounts
+</a>
+`;

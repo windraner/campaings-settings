@@ -32,14 +32,15 @@ const Tab1 = (props) => {
           required={true}
           stateHandler={stateHandler}
         />
-        <div className="campaings-settings__divider-mt-32" />
+        <div className="campaigns-settings__divider-mt-32" />
         <TextareaInput
+          className={'campaigns-settings__min-h-120'}
           title="Description"
           value={description}
           field={DESCRIPTION}
           stateHandler={stateHandler}
         />
-        <div className="campaings-settings__divider-mt-32" />
+        <div className="campaigns-settings__divider-mt-32" />
         <Dropdown
           title="Link campaign to a product catalogue?"
           productsCatalogueList={productsCatalogueList}
@@ -47,7 +48,7 @@ const Tab1 = (props) => {
           field={PRODUCT_CATALOGUE}
           stateHandler={stateHandler}
         />
-        <hr className="campaings-settings__border-separator" />
+        <hr className="campaigns-settings__border-separator" />
         <Switch
           text={'Enable shoppable link editing'}
           field={IS_SHOPPABLE_LINK}

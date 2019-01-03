@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccountsSettingItem /> matches the snapshot hide 1`] = `
+<div
+  className="campaigns-settings__accounts-setting-table-item-container "
+>
+  <div
+    className="d-flex"
+  >
+    <img
+      alt=""
+      className="campaigns-settings__accounts-setting-table-item-image d-block"
+      src="test.png"
+    />
+    <div
+      className="ml-3"
+    >
+      <div
+        className="campaigns-settings__accounts-setting-table-item-name"
+      >
+        Instagram1
+      </div>
+      <div
+        className="campaigns-settings__accounts-setting-table-item-soc-name"
+      >
+        <span
+          className="campaigns-settings__accounts-setting-table-item-soc-icon campaigns-settings__accounts-setting-table-item-inst mr-1"
+        />
+        Instagram
+      </div>
+    </div>
+  </div>
+  <div
+    className="d-flex align-items-end"
+  >
+    <div
+      className="campaigns-settings__accounts-setting-table-item-status campaigns-settings__accounts-setting-table-item-status-verified"
+    >
+      Verified
+    </div>
+  </div>
+  <div
+    className="d-flex align-items-end"
+  >
+    <Switch
+      disabled={false}
+      field={
+        Object {
+          "field": "userFeed",
+          "id": "1",
+        }
+      }
+      isChecked={true}
+      switchHandler={[Function]}
+    />
+  </div>
+  <div
+    className="d-flex align-items-end"
+  >
+    <Switch
+      disabled={false}
+      field={
+        Object {
+          "field": "taggedFeed",
+          "id": "1",
+        }
+      }
+      isChecked={true}
+      switchHandler={[Function]}
+    />
+  </div>
+  <div
+    className="d-flex align-items-end"
+  >
+    <Switch
+      disabled={false}
+      field={
+        Object {
+          "field": "mentionedFeed",
+          "id": "1",
+        }
+      }
+      isChecked={false}
+      switchHandler={[Function]}
+    />
+  </div>
+</div>
+`;

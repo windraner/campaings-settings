@@ -5,7 +5,7 @@ import './tab-title.css';
 
 const TabTitle = (props) => {
   return (
-    <h2 className="campaings-settings__tab-title text-center mb-0">
+    <h2 className="campaigns-settings__tab-title text-center mb-0">
       <strong>{props.text}</strong>
     </h2>
   );

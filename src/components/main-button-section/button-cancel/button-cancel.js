@@ -7,7 +7,7 @@ const ButtonCancel = (props) => {
   return (
     <div
       onClick={props.handlerCallBack}
-      className="campaings-settings__cancel-button"
+      className="campaigns-settings__cancel-button"
     >
       Cancel
     </div>

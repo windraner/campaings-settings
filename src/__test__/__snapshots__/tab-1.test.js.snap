@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tab1 /> matches the snapshot 1`] = `
+<Fragment>
+  <TabTitle
+    text="Campaign details"
+  />
+  <TabContainer>
+    <TextInput
+      field="name"
+      required={true}
+      stateHandler={[Function]}
+      title="Name"
+      value="Summer Sales 10%"
+    />
+    <div
+      className="campaigns-settings__divider-mt-32"
+    />
+    <TextareaInput
+      className="campaigns-settings__min-h-120"
+      field="description"
+      stateHandler={[Function]}
+      title="Description"
+      value="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    />
+    <div
+      className="campaigns-settings__divider-mt-32"
+    />
+    <Dropdown
+      field="productCatalogue"
+      productsCatalogueList={
+        Array [
+          "Product catalogue1",
+          "Product catalogue2",
+          "Product catalogue3",
+          "Product catalogue4",
+        ]
+      }
+      stateHandler={[Function]}
+      title="Link campaign to a product catalogue?"
+      value="Product catalogue2"
+    />
+    <hr
+      className="campaigns-settings__border-separator"
+    />
+    <Switch
+      field="isShoppableLink"
+      isChecked={true}
+      switchHandler={[Function]}
+      text="Enable shoppable link editing"
+    />
+  </TabContainer>
+</Fragment>
+`;

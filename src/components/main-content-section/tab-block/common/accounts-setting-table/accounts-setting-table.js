@@ -40,8 +40,8 @@ export default class AccountsSettingTable extends Component {
 
   render() {
     return (
-      <div className="campaings-settings__accounts-setting-table-container">
-        <div className="campaings-settings__accounts-setting-table-header-container d-grid">
+      <div className="campaigns-settings__accounts-setting-table-container">
+        <div className="campaigns-settings__accounts-setting-table-header-container d-grid">
           <div>Username / Platform</div>
           <div>Status</div>
           <div>

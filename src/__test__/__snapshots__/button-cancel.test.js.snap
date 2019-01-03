@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonCancel /> matches the snapshot 1`] = `
+<div
+  className="campaigns-settings__cancel-button"
+  onClick={[Function]}
+>
+  Cancel
+</div>
+`;

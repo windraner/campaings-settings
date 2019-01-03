@@ -18,6 +18,9 @@ export const HASHTAG_BLACK_LIST = 'hashtagBlackList';
 export const ACCOUNTS_SETTINGS_ITEMS = 'accountsSettingsItems';
 export const SHOW_ERROR_ALERT = 'showErrorAlert';
 export const SHOW_SUCCESS_ALERT = 'showSuccessAlert';
+export const IS_MEDIA_RIGHTS = 'isMediaRights';
+export const HASHTAG_RIGHTS_LIST = 'hashtagRightsList';
+export const TERMS_AND_CONDITIONS = 'termsAndConditions';
 
 export const VALIDATED_FIELDS = [
   ACTIVE_TAB

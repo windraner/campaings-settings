@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TooltipIcon /> matches the snapshot hide 1`] = `
+<span
+  className="campaigns-settings__tooltip-icon my-auto d-flex justify-content-center"
+>
+  <span
+    className="campaigns-settings__tooltip position-absolute"
+  >
+    test
+  </span>
+</span>
+`;

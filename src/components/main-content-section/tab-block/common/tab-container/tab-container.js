@@ -4,7 +4,7 @@ import './tab-container.css';
 
 const TabContainer = (props) => {
   return (
-    <div className="campaings-settings__tab-container">
+    <div className="campaigns-settings__tab-container">
       {props.children}
     </div>
   );

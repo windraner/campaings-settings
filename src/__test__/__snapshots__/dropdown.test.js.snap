@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dropdown /> matches the snapshot hide 1`] = `
+<Fragment>
+  <label
+    className="campaigns-settings__input-title"
+  >
+    test1
+  </label>
+  <div
+    className="campaigns-settings__select-container position-relative"
+  >
+    <select
+      className="campaigns-settings__select w-100"
+      onChange={[Function]}
+      value="test2"
+    >
+      <option
+        className="campaigns-settings__select-option"
+        key="0"
+      >
+        Product catalogue1
+      </option>
+      <option
+        className="campaigns-settings__select-option"
+        key="1"
+      >
+        Product catalogue2
+      </option>
+      <option
+        className="campaigns-settings__select-option"
+        key="2"
+      >
+        Product catalogue3
+      </option>
+      <option
+        className="campaigns-settings__select-option"
+        key="3"
+      >
+        Product catalogue4
+      </option>
+    </select>
+    <span
+      className="campaigns-settings__dropdown-icon"
+    />
+  </div>
+  <div
+    className="campaigns-settings__dropdown-hint mt-2 position-relative"
+  >
+    <span
+      className="campaigns-settings__dropdown-hint-icon"
+    />
+    Be careful! Changing catalog will result in 
+    <strong>
+      all existing product associations to be lost.
+    </strong>
+  </div>
+</Fragment>
+`;

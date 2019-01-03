@@ -1,8 +1,8 @@
-.campaings-settings__custom-alert-success {
+.campaigns-settings__custom-alert-success {
   background: #1bb934;
 }
 
-.campaings-settings__custom-alert-icon-success {
+.campaigns-settings__custom-alert-icon-success {
   font-family: 'IcoMoon', sans-serif;
   font-size: 1rem;
   width: 1rem;
@@ -10,7 +10,7 @@
   background: #fff;
 }
 
-.campaings-settings__custom-alert-icon-success::before {
+.campaigns-settings__custom-alert-icon-success::before {
   content: '\e939';
   color: #1bb934;
   line-height: 1;

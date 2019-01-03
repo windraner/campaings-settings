@@ -5,8 +5,8 @@ import './tooltip-icon.css';
 
 const TooltipIcon = (props) => {
   return (
-    <span className="campaings-settings__tooltip-icon my-auto d-flex justify-content-center">
-      <span className="campaings-settings__tooltip position-absolute">{props.text}</span>
+    <span className="campaigns-settings__tooltip-icon my-auto d-flex justify-content-center">
+      <span className="campaigns-settings__tooltip position-absolute">{props.text}</span>
     </span>
   );
 };

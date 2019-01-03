@@ -1,20 +1,20 @@
-.campaings-settings__tab-block-container {
+.campaigns-settings__tab-block-container {
   width: 87%;
 }
 
-.campaings-settings__tab-block-wrapper {
+.campaigns-settings__tab-block-wrapper {
   max-width: 53.75rem;
   margin: 3.75rem auto;
 }
 
-.campaings-settings__input-title {
+.campaigns-settings__input-title {
   color: #7f8fa4;
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.3125rem;
 }
 
-.campaings-settings__border-separator {
+.campaigns-settings__border-separator {
   height: 1px;
   background: #e2e7ee;
   border: none;
@@ -22,14 +22,22 @@
   overflow: hidden;
 }
 
-.campaings-settings__divider-mt-32 {
+.campaigns-settings__divider-mt-32 {
   margin-top: 2rem;
 }
 
-.campaings-settings__divider-mt-20 {
+.campaigns-settings__divider-mt-20 {
   margin-top: 1.25rem;
 }
 
-.campaings-settings__divider-mb-20 {
+.campaigns-settings__divider-mb-20 {
   margin-bottom: 1.25rem;
+}
+
+.campaigns-settings__min-h-120 {
+  min-height: 7.5rem;
+}
+
+.campaigns-settings__min-h-320 {
+  min-height: 20rem;
 }

@@ -1,4 +1,4 @@
-.campaings-settings__text-input {
+.campaigns-settings__text-input {
   border: 1px solid #d0d6de;
   border-radius: 4px;
   color: #354052;
@@ -9,25 +9,25 @@
   padding: 0.5rem 0.75rem;
 }
 
-.campaings-settings__text-input-error {
+.campaigns-settings__text-input-error {
   border-color: #ed1c24 !important;
 }
 
-.campaings-settings__text-input:hover {
+.campaigns-settings__text-input:hover {
   border-color: #bfc4cb;
 }
 
-.campaings-settings__text-input:focus {
+.campaigns-settings__text-input:focus {
   border-color: #a9b0b8;
 }
 
-.campaings-settings__hint-input-error {
+.campaigns-settings__hint-input-error {
   color: #ed1c24;
   font-size: 0.75rem;
   line-height: 1.3125rem;
 }
 
-.campaings-settings__hint-input-error-icon {
+.campaigns-settings__hint-input-error-icon {
   font-family: 'IcoMoon', sans-serif;
   font-size: 1rem;
   height: 1rem;
@@ -35,7 +35,7 @@
   background: #ed1c24;
 }
 
-.campaings-settings__hint-input-error-icon::before {
+.campaigns-settings__hint-input-error-icon::before {
   content: '\e92d';
   position: absolute;
   font-size: 0.65rem;

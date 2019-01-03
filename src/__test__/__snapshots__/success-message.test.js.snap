@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SuccessMessage /> matches the snapshot hide 1`] = `""`;
+
+exports[`<SuccessMessage /> matches the snapshot show 1`] = `
+<div
+  className="campaigns-settings__custom-alert campaigns-settings__custom-alert-success d-flex align-items-center justify-content-between"
+>
+  <span
+    className="campaigns-settings__custom-alert-icon-success position-relative rounded-circle"
+  />
+  <span>
+    Success! All changes have been saved.
+  </span>
+  <span
+    className="campaigns-settings__custom-alert-close"
+    onClick={[Function]}
+  />
+</div>
+`;

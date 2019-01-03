@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tab4 /> matches the snapshot 1`] = `
+<Fragment>
+  <TabTitle
+    text="Edit Media rights"
+  />
+  <TabContainer>
+    <Switch
+      field="isMediaRights"
+      text="Enable media rights framework?"
+    />
+  </TabContainer>
+</Fragment>
+`;

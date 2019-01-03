@@ -17,7 +17,7 @@ export default class Tab2 extends Component {
     if(!isMediaCollection) {return null;}
     return (
       <Fragment>
-        <hr className="campaings-settings__border-separator" />
+        <hr className="campaigns-settings__border-separator" />
         <CreatableSelectInput
           text={'Collect media with hashtags (max. 3, comma-separated)'}
           tooltipText={'test message'}
@@ -25,7 +25,7 @@ export default class Tab2 extends Component {
           itemsList={mediaCollectionList}
           stateHandler={stateHandler}
         />
-        <div className="campaings-settings__divider-mt-32" />
+        <div className="campaigns-settings__divider-mt-32" />
         <Switch
           text={'Hold incoming photos moderation queue?'}
           field={IS_PHOTO_MODERATION_QUEUE}
@@ -47,7 +47,7 @@ export default class Tab2 extends Component {
     return (
       <Fragment>
         <TabTitle text="Media collection" />
-        <div className="campaings-settings__divider-mt-20" />
+        <div className="campaigns-settings__divider-mt-20" />
         <TabSubtitle text="Global settings" />
 
         <TabContainer>
@@ -60,7 +60,7 @@ export default class Tab2 extends Component {
           {this.renderMediaCollections()}
         </TabContainer>
 
-        <div className="campaings-settings__divider-mt-20 campaings-settings__divider-mb-20 position-relative">
+        <div className="campaigns-settings__divider-mt-20 campaigns-settings__divider-mb-20 position-relative">
           <TabSubtitle text="Accounts settings" />
           <AccountEditButton />
         </div>

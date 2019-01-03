@@ -56,7 +56,7 @@ export default class CreatableSelectInput extends Component {
     const { inputValue } = this.state;
     return (
       <Fragment>
-        <div className="campaings-settings__input-title mb-1">{text}</div>
+        <div className="campaigns-settings__input-title mb-1">{text}</div>
 
         <div className="position-relative">
           <CreatableSelect
@@ -93,6 +93,7 @@ export default class CreatableSelectInput extends Component {
 }
 
 CreatableSelectInput.propTypes = {
+  text: PropTypes.string,
   itemsList: PropTypes.array.isRequired,
   tooltipText: PropTypes.string,
   field: PropTypes.oneOfType([

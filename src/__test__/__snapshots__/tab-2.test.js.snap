@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tab2 /> matches the snapshot 1`] = `
+<Fragment>
+  <TabTitle
+    text="Media collection"
+  />
+  <div
+    className="campaigns-settings__divider-mt-20"
+  />
+  <TabSubtitle
+    text="Global settings"
+  />
+  <TabContainer>
+    <Switch
+      field="isMediaCollection"
+      isChecked={false}
+      switchHandler={[Function]}
+      text="Enable media collection?"
+    />
+  </TabContainer>
+  <div
+    className="campaigns-settings__divider-mt-20 campaigns-settings__divider-mb-20 position-relative"
+  >
+    <TabSubtitle
+      text="Accounts settings"
+    />
+    <AccountEditButton />
+  </div>
+  <AccountsSettingTable
+    accountsSettingsItems={
+      Array [
+        Object {
+          "id": "1",
+          "mentionedFeed": false,
+          "platform": "Instagram",
+          "status": "Verified",
+          "taggedFeed": true,
+          "url": "test.png",
+          "userFeed": true,
+          "userName": "Instagram",
+        },
+        Object {
+          "id": "2",
+          "mentionedFeed": false,
+          "platform": "Twitter",
+          "status": "Rejected",
+          "taggedFeed": false,
+          "url": "test.png",
+          "userFeed": false,
+          "userName": "Blackmirror",
+        },
+      ]
+    }
+    stateHandler={[Function]}
+  />
+</Fragment>
+`;
+
+exports[`<Tab2 /> matches the snapshot 2`] = `
+<Fragment>
+  <TabTitle
+    text="Media collection"
+  />
+  <div
+    className="campaigns-settings__divider-mt-20"
+  />
+  <TabSubtitle
+    text="Global settings"
+  />
+  <TabContainer>
+    <Switch
+      field="isMediaCollection"
+      isChecked={true}
+      switchHandler={[Function]}
+      text="Enable media collection?"
+    />
+    <hr
+      className="campaigns-settings__border-separator"
+    />
+    <CreatableSelectInput
+      field="mediaCollectionList"
+      itemsList={
+        Array [
+          "qwe",
+          "rty",
+        ]
+      }
+      stateHandler={[Function]}
+      text="Collect media with hashtags (max. 3, comma-separated)"
+      tooltipText="test message"
+    />
+    <div
+      className="campaigns-settings__divider-mt-32"
+    />
+    <Switch
+      field="isPhotosModerationQueue"
+      isChecked={true}
+      switchHandler={[Function]}
+      text="Hold incoming photos moderation queue?"
+    />
+  </TabContainer>
+  <div
+    className="campaigns-settings__divider-mt-20 campaigns-settings__divider-mb-20 position-relative"
+  >
+    <TabSubtitle
+      text="Accounts settings"
+    />
+    <AccountEditButton />
+  </div>
+  <AccountsSettingTable
+    accountsSettingsItems={
+      Array [
+        Object {
+          "id": "1",
+          "mentionedFeed": false,
+          "platform": "Instagram",
+          "status": "Verified",
+          "taggedFeed": true,
+          "url": "test.png",
+          "userFeed": true,
+          "userName": "Instagram",
+        },
+        Object {
+          "id": "2",
+          "mentionedFeed": false,
+          "platform": "Twitter",
+          "status": "Rejected",
+          "taggedFeed": false,
+          "url": "test.png",
+          "userFeed": false,
+          "userName": "Blackmirror",
+        },
+      ]
+    }
+    stateHandler={[Function]}
+  />
+</Fragment>
+`;

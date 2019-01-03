@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CampaignsSettings /> matches the snapshot hide 1`] = `
+<div
+  className="campaigns-settings__container"
+>
+  <div
+    className="campaigns-settings__wrapper w-100 m-auto"
+  >
+    <MainContentSection
+      accountsSettingsItems={
+        Array [
+          Object {
+            "id": "1",
+            "mentionedFeed": false,
+            "platform": "Instagram",
+            "status": "Verified",
+            "taggedFeed": true,
+            "url": "test.png",
+            "userFeed": true,
+            "userName": "Instagram",
+          },
+          Object {
+            "id": "2",
+            "mentionedFeed": false,
+            "platform": "Twitter",
+            "status": "Rejected",
+            "taggedFeed": false,
+            "url": "test.png",
+            "userFeed": false,
+            "userName": "Blackmirror",
+          },
+        ]
+      }
+      activeTab="Media rights"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      hashtagBlackList={
+        Array [
+          "zxc",
+          "vbn",
+        ]
+      }
+      isMediaCollection={true}
+      isPhotosModerationQueue={false}
+      isShoppableLink={false}
+      mediaCollectionList={
+        Array [
+          "qwe",
+          "rty",
+        ]
+      }
+      name="Summer Sales 10%"
+      productCatalogue="Product catalogue2"
+      productsCatalogueList={
+        Array [
+          "Product catalogue1",
+          "Product catalogue2",
+          "Product catalogue3",
+          "Product catalogue4",
+        ]
+      }
+      showErrorAlert={false}
+      showSuccessAlert={false}
+      stateHandler={[Function]}
+      switchHandler={[Function]}
+      userBlackList={
+        Array [
+          "asd",
+          "fgh",
+        ]
+      }
+    />
+    <MainButtonSection
+      onCancel={[Function]}
+      onSave={[Function]}
+      showErrorAlert={false}
+      showSuccessAlert={false}
+      stateHandler={[Function]}
+    />
+  </div>
+</div>
+`;

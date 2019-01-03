@@ -1,0 +1,317 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MainContentSection /> matches the snapshot tab 1 1`] = `
+<div
+  className="d-flex justify-content-between"
+>
+  <NavMenu
+    activeTab="Campaign details"
+    menuAlerts={
+      Array [
+        Array [
+          "Summer Sales 10%",
+        ],
+      ]
+    }
+    stateHandler={[Function]}
+  />
+  <TabBlock
+    accountsSettingsItems={
+      Array [
+        Object {
+          "id": "1",
+          "mentionedFeed": false,
+          "platform": "Instagram",
+          "status": "Verified",
+          "taggedFeed": true,
+          "url": "test.png",
+          "userFeed": true,
+          "userName": "Instagram",
+        },
+        Object {
+          "id": "2",
+          "mentionedFeed": false,
+          "platform": "Twitter",
+          "status": "Rejected",
+          "taggedFeed": false,
+          "url": "test.png",
+          "userFeed": false,
+          "userName": "Blackmirror",
+        },
+      ]
+    }
+    activeTab="Campaign details"
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    hashtagBlackList={
+      Array [
+        "zxc",
+        "vbn",
+      ]
+    }
+    isMediaCollection={true}
+    isPhotosModerationQueue={true}
+    isShoppableLink={true}
+    mediaCollectionList={
+      Array [
+        "qwe",
+        "rty",
+      ]
+    }
+    name="Summer Sales 10%"
+    productCatalogue="Product catalogue2"
+    productsCatalogueList={
+      Array [
+        "Product catalogue1",
+        "Product catalogue2",
+        "Product catalogue3",
+        "Product catalogue4",
+      ]
+    }
+    stateHandler={[Function]}
+    switchHandler={[Function]}
+    userBlackList={
+      Array [
+        "asd",
+        "fgh",
+      ]
+    }
+  />
+</div>
+`;
+
+exports[`<MainContentSection /> matches the snapshot tab 2 1`] = `
+<div
+  className="d-flex justify-content-between"
+>
+  <NavMenu
+    activeTab="Media Collections"
+    menuAlerts={
+      Array [
+        Array [
+          "Summer Sales 10%",
+        ],
+      ]
+    }
+    stateHandler={[Function]}
+  />
+  <TabBlock
+    accountsSettingsItems={
+      Array [
+        Object {
+          "id": "1",
+          "mentionedFeed": false,
+          "platform": "Instagram",
+          "status": "Verified",
+          "taggedFeed": true,
+          "url": "test.png",
+          "userFeed": true,
+          "userName": "Instagram",
+        },
+        Object {
+          "id": "2",
+          "mentionedFeed": false,
+          "platform": "Twitter",
+          "status": "Rejected",
+          "taggedFeed": false,
+          "url": "test.png",
+          "userFeed": false,
+          "userName": "Blackmirror",
+        },
+      ]
+    }
+    activeTab="Media Collections"
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    hashtagBlackList={
+      Array [
+        "zxc",
+        "vbn",
+      ]
+    }
+    isMediaCollection={true}
+    isPhotosModerationQueue={true}
+    isShoppableLink={true}
+    mediaCollectionList={
+      Array [
+        "qwe",
+        "rty",
+      ]
+    }
+    name="Summer Sales 10%"
+    productCatalogue="Product catalogue2"
+    productsCatalogueList={
+      Array [
+        "Product catalogue1",
+        "Product catalogue2",
+        "Product catalogue3",
+        "Product catalogue4",
+      ]
+    }
+    stateHandler={[Function]}
+    switchHandler={[Function]}
+    userBlackList={
+      Array [
+        "asd",
+        "fgh",
+      ]
+    }
+  />
+</div>
+`;
+
+exports[`<MainContentSection /> matches the snapshot tab 3 1`] = `
+<div
+  className="d-flex justify-content-between"
+>
+  <NavMenu
+    activeTab="Blacklists"
+    menuAlerts={
+      Array [
+        Array [
+          "Summer Sales 10%",
+        ],
+      ]
+    }
+    stateHandler={[Function]}
+  />
+  <TabBlock
+    accountsSettingsItems={
+      Array [
+        Object {
+          "id": "1",
+          "mentionedFeed": false,
+          "platform": "Instagram",
+          "status": "Verified",
+          "taggedFeed": true,
+          "url": "test.png",
+          "userFeed": true,
+          "userName": "Instagram",
+        },
+        Object {
+          "id": "2",
+          "mentionedFeed": false,
+          "platform": "Twitter",
+          "status": "Rejected",
+          "taggedFeed": false,
+          "url": "test.png",
+          "userFeed": false,
+          "userName": "Blackmirror",
+        },
+      ]
+    }
+    activeTab="Blacklists"
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    hashtagBlackList={
+      Array [
+        "zxc",
+        "vbn",
+      ]
+    }
+    isMediaCollection={true}
+    isPhotosModerationQueue={true}
+    isShoppableLink={true}
+    mediaCollectionList={
+      Array [
+        "qwe",
+        "rty",
+      ]
+    }
+    name="Summer Sales 10%"
+    productCatalogue="Product catalogue2"
+    productsCatalogueList={
+      Array [
+        "Product catalogue1",
+        "Product catalogue2",
+        "Product catalogue3",
+        "Product catalogue4",
+      ]
+    }
+    stateHandler={[Function]}
+    switchHandler={[Function]}
+    userBlackList={
+      Array [
+        "asd",
+        "fgh",
+      ]
+    }
+  />
+</div>
+`;
+
+exports[`<MainContentSection /> matches the snapshot tab 4 1`] = `
+<div
+  className="d-flex justify-content-between"
+>
+  <NavMenu
+    activeTab="Media rights"
+    menuAlerts={
+      Array [
+        Array [
+          "Summer Sales 10%",
+        ],
+      ]
+    }
+    stateHandler={[Function]}
+  />
+  <TabBlock
+    accountsSettingsItems={
+      Array [
+        Object {
+          "id": "1",
+          "mentionedFeed": false,
+          "platform": "Instagram",
+          "status": "Verified",
+          "taggedFeed": true,
+          "url": "test.png",
+          "userFeed": true,
+          "userName": "Instagram",
+        },
+        Object {
+          "id": "2",
+          "mentionedFeed": false,
+          "platform": "Twitter",
+          "status": "Rejected",
+          "taggedFeed": false,
+          "url": "test.png",
+          "userFeed": false,
+          "userName": "Blackmirror",
+        },
+      ]
+    }
+    activeTab="Media rights"
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    hashtagBlackList={
+      Array [
+        "zxc",
+        "vbn",
+      ]
+    }
+    isMediaCollection={true}
+    isPhotosModerationQueue={true}
+    isShoppableLink={true}
+    mediaCollectionList={
+      Array [
+        "qwe",
+        "rty",
+      ]
+    }
+    name="Summer Sales 10%"
+    productCatalogue="Product catalogue2"
+    productsCatalogueList={
+      Array [
+        "Product catalogue1",
+        "Product catalogue2",
+        "Product catalogue3",
+        "Product catalogue4",
+      ]
+    }
+    stateHandler={[Function]}
+    switchHandler={[Function]}
+    userBlackList={
+      Array [
+        "asd",
+        "fgh",
+      ]
+    }
+  />
+</div>
+`;

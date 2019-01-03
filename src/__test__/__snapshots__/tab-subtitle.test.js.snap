@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TabSubtitle /> matches the snapshot hide 1`] = `
+<h2
+  className="campaigns-settings__tab-subtitle text-center mb-0"
+>
+  test
+</h2>
+`;

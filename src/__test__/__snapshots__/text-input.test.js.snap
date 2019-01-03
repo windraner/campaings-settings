@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextInput /> matches the snapshot hide 1`] = `
+<Fragment>
+  <label
+    className="campaigns-settings__input-title"
+  >
+    test1
+  </label>
+  <input
+    className="campaigns-settings__text-input  d-block w-100"
+    onBlur={[Function]}
+    onChange={[Function]}
+    type="text"
+    value="test2"
+  />
+</Fragment>
+`;
+
+exports[`<TextInput /> matches the snapshot hide 2`] = `
+<Fragment>
+  <label
+    className="campaigns-settings__input-title"
+  >
+    test1
+  </label>
+  <input
+    className="campaigns-settings__text-input campaigns-settings__text-input-error d-block w-100"
+    onBlur={[Function]}
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+  <div
+    className="campaigns-settings__hint-input-error d-flex align-items-center mt-2"
+  >
+    <span
+      className="campaigns-settings__hint-input-error-icon rounded-circle position-relative mr-2"
+    />
+    <span>
+      Can not be empty
+    </span>
+  </div>
+</Fragment>
+`;

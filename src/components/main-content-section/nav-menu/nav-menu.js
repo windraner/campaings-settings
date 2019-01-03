@@ -8,7 +8,7 @@ import './nav-menu.css';
 const NavMenu = (props) => {
   const { menuAlerts, activeTab, stateHandler } = props;
   return (
-    <ul className="campaings-settings__nav-menu-list m-0 d-flex flex-column">
+    <ul className="campaigns-settings__nav-menu-list m-0 d-flex flex-column">
       {
         MENU_LIST.map((item, i) => {
           return(

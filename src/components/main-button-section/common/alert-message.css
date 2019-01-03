@@ -1,4 +1,4 @@
-.campaings-settings__custom-alert {
+.campaigns-settings__custom-alert {
   border-radius: 4px;
   color: #fff;
   font-size: 0.875rem;
@@ -8,7 +8,7 @@
   padding: 0.625rem 1rem;
 }
 
-.campaings-settings__custom-alert-close {
+.campaigns-settings__custom-alert-close {
   font-family: 'IcoMoon', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -16,6 +16,6 @@
   cursor: pointer;
 }
 
-.campaings-settings__custom-alert-close::before {
+.campaigns-settings__custom-alert-close::before {
   content: '\e92d';
 }

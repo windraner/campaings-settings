@@ -11,7 +11,7 @@ import './common/alert-message.css';
 const MainButtonSection = (props) => {
   const { onCancel, onSave, showErrorAlert, showSuccessAlert, stateHandler } = props;
   return (
-    <div className="campaings-settings__main-button-wrapper d-flex justify-content-between">
+    <div className="campaigns-settings__main-button-wrapper d-flex justify-content-between">
       <ButtonCancel handlerCallBack={onCancel} />
       <ErrorMessage
         showErrorAlert={showErrorAlert}

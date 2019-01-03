@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextareaInput /> matches the snapshot hide 1`] = `
+<Fragment>
+  <label
+    className="campaigns-settings__input-title"
+  >
+    test1
+  </label>
+  <textarea
+    className="campaigns-settings__textarea-input d-block w-100 undefined"
+    onBlur={[Function]}
+    onChange={[Function]}
+    type="text"
+    value="test2"
+  />
+</Fragment>
+`;

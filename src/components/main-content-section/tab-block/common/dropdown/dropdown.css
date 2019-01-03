@@ -1,8 +1,8 @@
-.campaings-settings__select-container {
+.campaigns-settings__select-container {
   width: 18.75rem;
 }
 
-.campaings-settings__select {
+.campaigns-settings__select {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
@@ -14,19 +14,19 @@
   padding: 0.5rem 1rem;
 }
 
-.campaings-settings__select:hover {
+.campaigns-settings__select:hover {
   border-color: #bfc4cb;
 }
 
-.campaings-settings__select:focus {
+.campaigns-settings__select:focus {
   border-color: #a9b0b8;
 }
 
-.campaings-settings__select-option {
+.campaigns-settings__select-option {
   height: 40px;
 }
 
-.campaings-settings__dropdown-icon {
+.campaigns-settings__dropdown-icon {
   color: #b0b1bd;
   font-size: 1rem;
   position: absolute;
@@ -35,25 +35,25 @@
   line-height: 1;
 }
 
-.campaings-settings__dropdown-icon::before {
+.campaigns-settings__dropdown-icon::before {
   content: '\e940';
   font-family: 'IcoMoon', sans-serif;
 }
 
-.campaings-settings__dropdown-hint {
+.campaigns-settings__dropdown-hint {
   font-size: 0.75rem;
   line-height: 1.3125rem;
   color: #7f8fa4;
   padding: 0 0 0 20px;
 }
 
-.campaings-settings__dropdown-hint-icon {
+.campaigns-settings__dropdown-hint-icon {
   font-family: 'IcoMoon', sans-serif;
   font-size: 1rem;
   color: #c5d0de;
 }
 
-.campaings-settings__dropdown-hint-icon::before {
+.campaigns-settings__dropdown-hint-icon::before {
   content: '\e927';
   font-family: 'IcoMoon', sans-serif;
   position: absolute;

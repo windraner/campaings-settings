@@ -1,4 +1,4 @@
-.campaings-settings__save-button {
+.campaigns-settings__save-button {
   height: 2.875rem;
   width: 9.375rem;
   background: #ea7835;
@@ -12,12 +12,12 @@
   cursor: pointer;
 }
 
-.campaings-settings__save-button:hover {
+.campaigns-settings__save-button:hover {
   background: #eb7f40;
   border-color: #d37239;
 }
 
-.campaings-settings__save-button:active {
+.campaigns-settings__save-button:active {
   background-color: #d86f31;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }

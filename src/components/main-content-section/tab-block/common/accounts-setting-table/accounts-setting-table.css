@@ -1,4 +1,4 @@
-.campaings-settings__accounts-setting-table-container {
+.campaigns-settings__accounts-setting-table-container {
   border: 1px solid #e2e7ee;
   border-radius: 4px;
   background: #f8fafb;
@@ -6,7 +6,7 @@
   padding: 0 0 2rem 0;
 }
 
-.campaings-settings__accounts-setting-table-header-container {
+.campaigns-settings__accounts-setting-table-header-container {
   display: grid;
   grid-template-columns: 30% 17% 17% 18% 18%;
   padding: 1.25rem 2.875rem;

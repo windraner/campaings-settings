@@ -69,8 +69,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "lint": "node_modules/.bin/eslint 'src/**/*.js'",
-    "stylelint": "node_modules/.bin/stylelint 'src/**/*.css'"
+    "lint": "node_modules/.bin/eslint src/**/*.js",
+    "stylelint": "node_modules/.bin/stylelint src/**/*.css"
   },
   "browserslist": [
     ">0.2%",

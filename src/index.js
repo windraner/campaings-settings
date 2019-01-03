@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CampaingsSettings from './campaings-settings';
+import CampaignsSettings from './campaigns-settings';
 
 import image from './test.png';
 import './index.css';
@@ -8,13 +8,19 @@ import './index.css';
 const data = {
   name: 'Summer Sales 10%',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  productCatalogue: 'Product catalogue2',
+  productCatalogue: '',
   isShoppableLink: false,
   isMediaCollection: true,
   mediaCollectionList: ['qwe', 'rty'],
   isPhotosModerationQueue: false,
   userBlackList: ['asd', 'fgh'],
   hashtagBlackList: ['zxc', 'vbn'],
+  termsAndConditions: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' +
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' +
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' +
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' +
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' +
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   accountsSettingsItems: [
     {
       id: '1',
@@ -37,6 +43,8 @@ const data = {
       mentionedFeed: false
     }
   ],
+  isMediaRights: true,
+  hashtagRightsList: ['yui', 'hjk'],
 };
 
 const cancelCallback = () => {
@@ -48,9 +56,10 @@ const saveCallback = (/*newData*/) => {
 };
 
 ReactDOM.render(
-  <CampaingsSettings
+  <CampaignsSettings
     data={data}
     productsCatalogueList={[
+      '',
       'Product catalogue1',
       'Product catalogue2',
       'Product catalogue3',

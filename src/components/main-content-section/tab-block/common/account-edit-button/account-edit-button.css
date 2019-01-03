@@ -1,4 +1,4 @@
-.campaings-settings__account-edit-button {
+.campaigns-settings__account-edit-button {
   position: absolute;
   padding: 5px 1rem;
   right: 0;
@@ -6,26 +6,26 @@
   font-size: 0.875rem;
   font-weight: 600;
   color: #f67646;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
 
-.campaings-settings__account-edit-button:hover {
+.campaigns-settings__account-edit-button:hover {
   border-color: #a9b0b8;
   color: #f67646;
   text-decoration: none;
 }
 
-.campaings-settings__account-edit-button:active {
+.campaigns-settings__account-edit-button:active {
   background: #ececec;
 }
 
-.campaings-settings__account-edit-button-icon {
+.campaigns-settings__account-edit-button-icon {
   font-family: 'IcoMoon', sans-serif;
   font-size: 1rem;
 }
 
-.campaings-settings__account-edit-button-icon::before {
+.campaigns-settings__account-edit-button-icon::before {
   content: '\e907';
   line-height: 1;
   color: #f67646;

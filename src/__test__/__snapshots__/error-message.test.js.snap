@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ErrorMessage /> matches the snapshot hide 1`] = `""`;
+
+exports[`<ErrorMessage /> matches the snapshot show 1`] = `
+<div
+  className="campaigns-settings__custom-alert campaigns-settings__custom-alert-error d-flex align-items-center justify-content-between"
+>
+  <span
+    className="campaigns-settings__custom-alert-icon-error"
+  />
+  <span>
+    Error. Please fill out all required fields!
+  </span>
+  <span
+    className="campaigns-settings__custom-alert-close"
+    onClick={[Function]}
+  />
+</div>
+`;

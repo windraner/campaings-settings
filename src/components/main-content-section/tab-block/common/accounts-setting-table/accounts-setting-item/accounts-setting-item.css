@@ -1,4 +1,4 @@
-.campaings-settings__accounts-setting-table-item-container {
+.campaigns-settings__accounts-setting-table-item-container {
   display: grid;
   grid-template-columns: 30% 17% 17% 18% 18%;
   padding: 1.25rem 2.875rem;
@@ -6,49 +6,49 @@
   border-bottom: solid 1px #e2e7ee;
 }
 
-.campaings-settings__accounts-setting-table-item-container:last-child {
+.campaigns-settings__accounts-setting-table-item-container:last-child {
   border: none;
 }
 
-.campaings-settings__accounts-setting-table-item-container-disabled {
+.campaigns-settings__accounts-setting-table-item-container-disabled {
   background: #f8fafb;
 }
 
-.campaings-settings__accounts-setting-table-item-image {
+.campaigns-settings__accounts-setting-table-item-image {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 4px;
 }
 
-.campaings-settings__accounts-setting-table-item-name {
+.campaigns-settings__accounts-setting-table-item-name {
   color: #354052;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.3125rem;
 }
 
-.campaings-settings__accounts-setting-table-item-soc-name {
+.campaigns-settings__accounts-setting-table-item-soc-name {
   color: #354052;
   font-size: 0.875rem;
   line-height: 1rem;
 }
 
-.campaings-settings__accounts-setting-table-item-soc-icon {
+.campaigns-settings__accounts-setting-table-item-soc-icon {
   font-family: 'IcoMoon', sans-serif;
   font-size: 1rem;
 }
 
-.campaings-settings__accounts-setting-table-item-inst::before {
+.campaigns-settings__accounts-setting-table-item-inst::before {
   content: '\e919';
   color: #dc2875;
 }
 
-.campaings-settings__accounts-setting-table-item-tw::before {
+.campaigns-settings__accounts-setting-table-item-tw::before {
   content: '\e916';
   color: #1da1f2;
 }
 
-.campaings-settings__accounts-setting-table-item-status {
+.campaigns-settings__accounts-setting-table-item-status {
   color: #fff;
   width: 5rem;
   line-height: 1.125rem;
@@ -60,10 +60,10 @@
   text-align: center;
 }
 
-.campaings-settings__accounts-setting-table-item-status-verified {
+.campaigns-settings__accounts-setting-table-item-status-verified {
   background: #39b54a;
 }
 
-.campaings-settings__accounts-setting-table-item-status-rejected {
+.campaigns-settings__accounts-setting-table-item-status-rejected {
   background: #f85359;
 }

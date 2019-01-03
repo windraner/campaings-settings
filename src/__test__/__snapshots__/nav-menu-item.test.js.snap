@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavMenuItem /> matches the snapshot 1`] = `
+<li
+  className="campaigns-settings__nav-menu-item position-relative campaigns-settings__nav-menu-item_active"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <span>
+    test
+  </span>
+</li>
+`;
+
+exports[`<NavMenuItem /> matches the snapshot 2`] = `
+<li
+  className="campaigns-settings__nav-menu-item position-relative campaigns-settings__nav-menu-item_active"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <span>
+    test
+  </span>
+  <span
+    className="campaigns-settings__nav-menu-icon"
+  />
+</li>
+`;
