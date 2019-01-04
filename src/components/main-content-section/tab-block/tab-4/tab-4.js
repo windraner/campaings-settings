@@ -4,6 +4,7 @@ import TabContainer from '../common/tab-container/tab-container';
 import Switch from '../common/switch/switch';
 import CreatableSelectInput from '../common/creatable-select/creatable-select';
 import TextareaInput from '../common/textarea-input/textarea-input';
+import PropTypes from 'prop-types';
 
 import { IS_MEDIA_RIGHTS, HASHTAG_RIGHTS_LIST, TERMS_AND_CONDITIONS } from '../../../../constans';
 
@@ -57,3 +58,11 @@ export default class Tab4 extends Component {
     );
   }
 }
+
+Tab4.propTypes = {
+  isMediaRights: PropTypes.bool.isRequired,
+  hashtagRightsList: PropTypes.array.isRequired,
+  termsAndConditions: PropTypes.string.isRequired,
+  switchHandler: PropTypes.func.isRequired,
+  stateHandler: PropTypes.func.isRequired,
+};

@@ -21,6 +21,7 @@ export default class Tab2 extends Component {
         <CreatableSelectInput
           text={'Collect media with hashtags (max. 3, comma-separated)'}
           tooltipText={'test message'}
+          limit={3}
           field={MEDIA_COLLECTION_LIST}
           itemsList={mediaCollectionList}
           stateHandler={stateHandler}

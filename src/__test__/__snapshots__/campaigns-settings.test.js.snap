@@ -32,7 +32,7 @@ exports[`<CampaignsSettings /> matches the snapshot hide 1`] = `
           },
         ]
       }
-      activeTab="Media rights"
+      activeTab="Campaign details"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       hashtagBlackList={
         Array [
@@ -40,7 +40,14 @@ exports[`<CampaignsSettings /> matches the snapshot hide 1`] = `
           "vbn",
         ]
       }
+      hashtagRightsList={
+        Array [
+          "yui",
+          "hjk",
+        ]
+      }
       isMediaCollection={true}
+      isMediaRights={true}
       isPhotosModerationQueue={false}
       isShoppableLink={false}
       mediaCollectionList={
@@ -63,6 +70,7 @@ exports[`<CampaignsSettings /> matches the snapshot hide 1`] = `
       showSuccessAlert={false}
       stateHandler={[Function]}
       switchHandler={[Function]}
+      termsAndConditions="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       userBlackList={
         Array [
           "asd",

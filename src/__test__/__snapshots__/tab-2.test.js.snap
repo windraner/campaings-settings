@@ -86,6 +86,7 @@ exports[`<Tab2 /> matches the snapshot 2`] = `
           "rty",
         ]
       }
+      limit={3}
       stateHandler={[Function]}
       text="Collect media with hashtags (max. 3, comma-separated)"
       tooltipText="test message"

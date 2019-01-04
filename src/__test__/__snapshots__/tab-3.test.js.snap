@@ -14,6 +14,7 @@ exports[`<Tab3 /> matches the snapshot 1`] = `
           "fgh",
         ]
       }
+      limit={3}
       stateHandler={[Function]}
       text="Do not collect media of these users (max. 3, comma-separated)"
     />
@@ -28,6 +29,7 @@ exports[`<Tab3 /> matches the snapshot 1`] = `
           "vbn",
         ]
       }
+      limit={3}
       stateHandler={[Function]}
       text="Do not include media with hashtag (max. 3, comma-separated)"
     />

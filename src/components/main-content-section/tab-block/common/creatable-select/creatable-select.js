@@ -18,11 +18,11 @@ export default class CreatableSelectInput extends Component {
   }
 
   handleChange = (value) => {
-    const { field, stateHandler } = this.props;
+    const { field, limit, stateHandler } = this.props;
     const newList = value.map((item) => {
       return item.value;
     });
-    stateHandler(field, optionLimit(newList, 3));
+    stateHandler(field, optionLimit(newList, limit));
   }
 
   handleInputChange = (inputValue) => {
@@ -30,24 +30,24 @@ export default class CreatableSelectInput extends Component {
   }
 
   handleKeyDown = (event) => {
-    const { field, itemsList, stateHandler } = this.props;
+    const { field, limit, itemsList, stateHandler } = this.props;
     const { inputValue } = this.state;
     if (!inputValue) {return;}
     switch (event.key) {
       case 'Enter':
       case 'Tab':
         this.setState({ inputValue: '' });
-        stateHandler(field, optionLimit([...itemsList, ...splitMultiOptionLimit(inputValue)], 3));
+        stateHandler(field, optionLimit([...itemsList, ...splitMultiOptionLimit(inputValue)], limit));
         event.preventDefault();
     }
   }
 
   blurHandler = (event) => {
-    const { field, itemsList, stateHandler } = this.props;
+    const { field, limit, itemsList, stateHandler } = this.props;
     const { inputValue } = this.state;
     if (!inputValue) {return;}
     this.setState({ inputValue: '' });
-    stateHandler(field, optionLimit([...itemsList, ...splitMultiOptionLimit(inputValue)], 3));
+    stateHandler(field, optionLimit([...itemsList, ...splitMultiOptionLimit(inputValue)], limit));
     event.preventDefault();
   }
 
@@ -93,6 +93,7 @@ export default class CreatableSelectInput extends Component {
 }
 
 CreatableSelectInput.propTypes = {
+  limit: PropTypes.number,
   text: PropTypes.string,
   itemsList: PropTypes.array.isRequired,
   tooltipText: PropTypes.string,

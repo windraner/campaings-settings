@@ -16,6 +16,7 @@ const Tab3 = (props) => {
       <TabContainer>
         <CreatableSelectInput
           text={'Do not collect media of these users (max. 3, comma-separated)'}
+          limit={3}
           field={USER_BLACK_LIST}
           itemsList={userBlackList}
           stateHandler={stateHandler}
@@ -23,6 +24,7 @@ const Tab3 = (props) => {
         <div className="campaigns-settings__divider-mt-32" />
         <CreatableSelectInput
           text={'Do not include media with hashtag (max. 3, comma-separated)'}
+          limit={3}
           field={HASHTAG_BLACK_LIST}
           itemsList={hashtagBlackList}
           stateHandler={stateHandler}

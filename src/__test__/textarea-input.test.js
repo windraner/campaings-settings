@@ -22,6 +22,12 @@ describe('<TextareaInput />', () => {
     expect(onClickFunc).toBeCalled();
     expect(onClickFunc.mock.calls).toEqual([['test3', 'foo']]);
   });
+  it('Check for className prop', () => {
+    const wrapper = shallow(<TextareaInput title="test1" value="test2" field="test3" stateHandler={function() {}} />);
+    expect(wrapper.find('.test-class-name').length).toBe(0);
+    wrapper.setProps({ className: 'test-class-name' });
+    expect(wrapper.find('.test-class-name').length).toBe(1);
+  });
   it('matches the snapshot hide', () => {
     const tree = shallow(<TextareaInput title="test1" value="test2" field="test3" stateHandler={function() {}} />);
     expect(toJson(tree)).toMatchSnapshot();

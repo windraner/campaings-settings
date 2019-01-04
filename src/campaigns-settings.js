@@ -12,7 +12,7 @@ export default class CampaignsSettings extends Component {
     super();
     const { data } = props;
     this.state = {
-      [CONSTANT.ACTIVE_TAB]: CONSTANT.MENU_LIST[3],
+      [CONSTANT.ACTIVE_TAB]: CONSTANT.MENU_LIST[0],
       [CONSTANT.NAME]: data.name,
       [CONSTANT.DESCRIPTION]: data.description,
       [CONSTANT.PRODUCT_CATALOGUE]: data.productCatalogue,
@@ -100,11 +100,12 @@ CampaignsSettings.propTypes = {
       taggedFeed: PropTypes.bool.isRequired,
       mentionedFeed: PropTypes.bool.isRequired,
     })).isRequired,
+    isMediaRights: PropTypes.bool.isRequired,
+    hashtagRightsList: PropTypes.array.isRequired,
+    termsAndConditions: PropTypes.string.isRequired,
   }),
   productsCatalogueList: PropTypes.array.isRequired,
-  isMediaRights: PropTypes.bool.isRequired,
-  hashtagRightsList: PropTypes.array.isRequired,
-  termsAndConditions: PropTypes.string.isRequired,
+
   onSave: PropTypes.func.isRequired,
   onCancel: PropTypes.func.isRequired,
 };

@@ -19,6 +19,12 @@ const data = {
   isPhotosModerationQueue: false,
   userBlackList: ['asd', 'fgh'],
   hashtagBlackList: ['zxc', 'vbn'],
+  termsAndConditions: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' +
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' +
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' +
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' +
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' +
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   accountsSettingsItems: [
     {
       id: '1',
@@ -41,6 +47,8 @@ const data = {
       mentionedFeed: false
     }
   ],
+  isMediaRights: true,
+  hashtagRightsList: ['yui', 'hjk'],
 };
 
 const mock = {
@@ -56,7 +64,7 @@ const mock = {
 };
 
 const defaultState = {
-  [CONSTANT.ACTIVE_TAB]: CONSTANT.MENU_LIST[1],
+  [CONSTANT.ACTIVE_TAB]: CONSTANT.MENU_LIST[0],
   [CONSTANT.NAME]: data.name,
   [CONSTANT.DESCRIPTION]: data.description,
   [CONSTANT.PRODUCT_CATALOGUE]: data.productCatalogue,
@@ -67,6 +75,9 @@ const defaultState = {
   [CONSTANT.USER_BLACK_LIST]: data.userBlackList,
   [CONSTANT.HASHTAG_BLACK_LIST]: data.hashtagBlackList,
   [CONSTANT.ACCOUNTS_SETTINGS_ITEMS]: data.accountsSettingsItems,
+  [CONSTANT.IS_MEDIA_RIGHTS]: data.isMediaRights,
+  [CONSTANT.HASHTAG_RIGHTS_LIST]: data.hashtagRightsList,
+  [CONSTANT.TERMS_AND_CONDITIONS]: data.termsAndConditions,
   [CONSTANT.SHOW_ERROR_ALERT]: false,
   [CONSTANT.SHOW_SUCCESS_ALERT]: false,
 };
