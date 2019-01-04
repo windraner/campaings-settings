@@ -274,38 +274,38 @@ module.exports = {
           // In production, we use a plugin to extract that CSS to a file, but
           // in development "style" loader enables hot editing of CSS.
           // By default we support CSS Modules with the extension .module.css
-          {
-            test: cssRegex,
-            exclude: cssModuleRegex,
-            use: getStyleLoaders({
-              importLoaders: 1,
-            }),
-          },
-          // Adds support for CSS Modules (https://github.com/css-modules/css-modules)
-          // using the extension .module.css
-          {
-            test: cssModuleRegex,
-            use: getStyleLoaders({
-              importLoaders: 1,
-              modules: true,
-              getLocalIdent: getCSSModuleLocalIdent,
-            }),
-          },
           // {
-          //   test: /\.css$/,
-          //   exclude: /node_modules/,
-          //   loader: ExtractTextPlugin.extract({
-          //       fallback: 'style-loader',
-          //       use: [
-          //           {
-          //             loader: 'css-loader',
-          //             query: { modules: false },
-
-          //           },
-          //           { loader: 'postcss-loader' }
-          //       ]
+          //   test: cssRegex,
+          //   exclude: cssModuleRegex,
+          //   use: getStyleLoaders({
+          //     importLoaders: 1,
           //   }),
           // },
+          // Adds support for CSS Modules (https://github.com/css-modules/css-modules)
+          // using the extension .module.css
+          // {
+          //   test: cssModuleRegex,
+          //   use: getStyleLoaders({
+          //     importLoaders: 1,
+          //     modules: true,
+          //     getLocalIdent: getCSSModuleLocalIdent,
+          //   }),
+          // },
+          {
+            test: /\.css$/,
+            exclude: /node_modules/,
+            loader: ExtractTextPlugin.extract({
+                fallback: 'style-loader',
+                use: [
+                    {
+                      loader: 'css-loader',
+                      query: { modules: false },
+
+                    },
+                    { loader: 'postcss-loader' }
+                ]
+            }),
+          },
           // Opt-in support for SASS (using .scss or .sass extensions).
           // Chains the sass-loader with the css-loader and the style-loader
           // to immediately apply all styles to the DOM.

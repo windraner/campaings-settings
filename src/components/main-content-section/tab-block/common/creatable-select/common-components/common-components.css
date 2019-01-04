@@ -1,5 +1,5 @@
 .catalog-settings-content__select-control {
-  height: 2.25rem;
+  min-height: 2.25rem;
   background: #fff;
   border: 1px solid #d0d6de;
   border-radius: 4px;
@@ -9,6 +9,8 @@
   background: #f1f4f8;
   border: 1px solid #d0d6de;
   border-radius: 4px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .catalog-settings-content__select-value-label {

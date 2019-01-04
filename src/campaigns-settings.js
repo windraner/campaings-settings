@@ -49,7 +49,7 @@ export default class CampaignsSettings extends Component {
     const { onSave } = this.props;
     if(!this.state[CONSTANT.NAME]) {return this.setState({[CONSTANT.SHOW_ERROR_ALERT]: true});}
     this.setState({[CONSTANT.SHOW_SUCCESS_ALERT]: true});
-    onSave();
+    onSave(this.state);
   }
 
   render() {
